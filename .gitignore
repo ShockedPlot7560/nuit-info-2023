@@ -8,7 +8,6 @@
 /var/
 /vendor/
 ###< symfony/framework-bundle ###
-/.docker/.env.nginx.local
 supervisord.pid
 ###> symfony/webpack-encore-bundle ###
 /node_modules/
