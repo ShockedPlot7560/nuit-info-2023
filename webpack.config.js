@@ -77,6 +77,7 @@ Encore
       options.static = {
         watch: false
       };
+      options.allowedHosts = 'all';
       options.watchFiles = {
         paths: ['src/**/*.php', 'templates/**/*'],
       };
