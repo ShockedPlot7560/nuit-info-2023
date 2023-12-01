@@ -23,7 +23,7 @@ services:
                 TIMEZONE: ${TIMEZONE}
         hostname: php
         volumes:
-            - ../:/var/www/symfony:cached
+            - ../:/var/www/symfony
             - symfony_app_var:/var/www/symfony/var
             - ../vendor:/var/www/symfony/vendor
         networks:
@@ -32,16 +32,26 @@ services:
         build:
             context: ./nginx
         volumes:
-            - ../:/var/www/symfony:cached
+            - ../:/var/www/symfony
             - symfony_app_var:/var/www/symfony/var
             - symfony_app_vendor:/var/www/symfony/vendor
         ports:
             - 80:80
-            - 8080:8080
         networks:
             - symfony_app
         env_file:
             - .env.nginx.local
+
+    npm:
+        image: node:20.10.0-alpine
+        volumes:
+            - ../:/var/www/symfony
+        working_dir: /var/www/symfony
+        command: npm run dev-server -- --port 9000 --host 0.0.0.0
+        depends_on:
+            - php
+        ports:
+            - 9000:9000
 
 volumes:
     symfony_app_var:
