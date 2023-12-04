@@ -2,6 +2,22 @@
 
 ## Lancement
 
+### Sous Windows
+
+> Avoir npm >18.0.0 installé sous windows et docker installé sous wsl avec docker compose et make.
+
+Dans WSL: 
 ```bash
-make up
+make windows
+```
+
+Dans un powershell: 
+```powershell
+npm run dev-server
+```
+
+### Sous Linux 
+
+```bash
+make linux
 ```
