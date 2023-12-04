@@ -1,7 +1,7 @@
 DOCKER_COMPOSE = cd .docker && docker compose
 
-up:
-	$(DOCKER_COMPOSE) up -d --build
+linux: 
+	$(DOCKER_COMPOSE) -f docker-compose.linux.yml up -d --build
 
-down:
-	$(DOCKER_COMPOSE) down
+windows:
+	$(DOCKER_COMPOSE) up -d --build

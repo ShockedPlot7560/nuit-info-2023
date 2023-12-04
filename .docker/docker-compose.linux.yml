@@ -28,6 +28,16 @@ services:
             - ../vendor:/var/www/symfony/vendor
         networks:
             - symfony_app
+    npm:
+        image: node:20.10.0-alpine
+        volumes:
+            - ../:/var/www/symfony
+        working_dir: /var/www/symfony
+        command: npm run dev-server -- --port 9000 --host 0.0.0.0
+        depends_on:
+            - php
+        ports:
+            - 9000:9000
     nginx:
         build:
             context: ./nginx
