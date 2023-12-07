@@ -14,7 +14,7 @@ class HouseController extends AbstractController
     {
         return $this->render('house/index.html.twig', [
             'controller_name' => 'HouseController',
-            "navigation" => RoomFactory::toJson()
+            'navigation' => RoomFactory::toJson()
         ]);
     }
 }
