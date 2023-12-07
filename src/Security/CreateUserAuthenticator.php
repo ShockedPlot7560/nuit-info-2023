@@ -31,24 +31,24 @@ class CreateUserAuthenticator extends AbstractAuthenticator
     {
         $userId = $request->getSession()->get('user_id');
         if($userId === null){
-            $user = $this->createUser();
+            $user = $this->createUser($request);
         }else{
             $user = $this->em->getRepository(User::class)->find($userId);
             if($user === null){
-                $user = $this->createUser();
+                $user = $this->createUser($request);
             }
         }
-
-        $request->getSession()->set('user_id', $user->getUuid());
 
         return new SelfValidatingPassport(new UserBadge($user->getUserIdentifier()));
     }
 
-    private function createUser() : User {
+    private function createUser(Request $request) : User {
         $user = new User();
         $this->em->persist($user);
         $this->em->flush();
         $this->em->refresh($user);
+
+        $request->getSession()->set('user_id', $user->getUuid());
         return $user;
     }
 
