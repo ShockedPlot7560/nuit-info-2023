@@ -82,6 +82,9 @@ Encore
         paths: ['src/**/*.php', 'templates/**/*'],
       };
     })
+
+    // postcss loader for tailwindcss
+    .enablePostCssLoader()
 ;
 
 module.exports = Encore.getWebpackConfig();
