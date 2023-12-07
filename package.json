@@ -26,9 +26,11 @@
         "watch": "encore dev --watch",
         "build": "encore production --progress"
     },
+    "type": "module",
     "dependencies": {
         "p-try": "^3.0.0",
         "pkg-up": "^5.0.0",
+        "puppeteer": "^21.6.0",
         "to-fast-properties": "^4.0.0"
     }
 }
