@@ -1,4 +1,5 @@
 @import 'primeicons/primeicons.css';
+@import 'primereact/resources/themes/lara-light-cyan/theme.css';
 
 @tailwind base;
 @tailwind components;
@@ -6,4 +7,12 @@
 
 body {
     background-color: lightgray;
+}
+
+/* Rooms background */
+.bg-garage {
+    background-image: url('/assets/img/rooms/spectrum-gradient.svg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
