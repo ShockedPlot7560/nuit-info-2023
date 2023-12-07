@@ -26,21 +26,25 @@ export default function (props) {
             </div>
             <div className={'flex flex-col justify-between items-center'}>
                 <PrimeReactProvider>
-                    { navigation[0] !== null &&
+                    { navigation[0] !== null ?
                         <Button
                             icon="pi pi-chevron-up"
                             rounded text raised
                             aria-label="Filter"
                             className={`${navigationButtonStyle} mt-5`}
                         />
+                    :
+                        <div></div>
                     }
-                    { navigation[2] !== null &&
+                    { navigation[2] !== null ?
                         <Button
                             icon="pi pi-chevron-down"
                             rounded text raised
                             aria-label="Filter"
                             className={`${navigationButtonStyle} mb-5`}
                         />
+                    :
+                        <div></div>
                     }
                 </PrimeReactProvider>
             </div>
