@@ -30,7 +30,6 @@
         "watch": "encore dev --watch",
         "build": "encore production --progress"
     },
-    "type": "module",
     "dependencies": {
         "p-try": "^3.0.0",
         "pkg-up": "^5.0.0",
