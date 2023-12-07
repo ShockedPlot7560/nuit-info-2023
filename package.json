@@ -33,6 +33,8 @@
     "dependencies": {
         "p-try": "^3.0.0",
         "pkg-up": "^5.0.0",
+        "primeicons": "^6.0.1",
+        "primereact": "^10.2.1",
         "to-fast-properties": "^4.0.0"
     }
 }
