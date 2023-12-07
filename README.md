@@ -4,7 +4,7 @@
 
 ### Sous Windows
 
-> Avoir npm >20.0.0 installé sous windows et docker installé sous wsl avec docker compose et make.
+> Avoir node >20.0.0 installé sous windows et docker installé sous wsl avec docker compose et make.
 
 Dans WSL: 
 ```bash
