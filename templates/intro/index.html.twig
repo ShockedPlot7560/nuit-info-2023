@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+  <div {{ react_component('StartNarration', {
+    sequence: [
+      "entrypoint.narration.1"|trans,
+      "entrypoint.narration.2"|trans,
+      "entrypoint.narration.3"|trans,
+    ],
+    after: path('app_industry')
+  }) }}></div>
+{% endblock %}
