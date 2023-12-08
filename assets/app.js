@@ -11,6 +11,7 @@ registerReactControllerComponents(require.context('./react/controllers', true, /
 
 // any CSS you import will output into a single css file (app.css in this case)
 import './styles/app.css';
+import "/node_modules/flag-icons/css/flag-icons.min.css";
 
 // start the Stimulus application
 import './bootstrap';

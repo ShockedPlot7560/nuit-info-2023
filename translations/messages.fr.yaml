@@ -1,0 +1,51 @@
+name: "Français"
+
+narration:
+    enter_continue: "Appuyez sur Entrée pour continuer"
+
+entrypoint:
+    narration:
+        1: "Bienvenue sur Terre"
+        2: "Je suis ton assistant personnel, laisse moi te guider ..."
+        3: "Résous les défis et tu seras prêt à vivre de manière autonome et responsable !"
+
+factory:
+    narration:
+        1: "Nous avons un problème d'émission de gaz à effet de serre"
+        2: "Aide nous à détecter les objets avec les plus grandes émissions de CO2"
+        3: "A la fin de la bataille, nous pourrons commencer à trouver des solutions ensemble"
+    instructions: "Clique sur l'objet qui émet le plus de carbone durant son cycle de fabrication"
+
+user_creation:
+    narration:
+        1: "Je pense que tu es prêt, laisse moi te fournir une identité ..."
+
+market:
+    narration:
+        1: "Pour te faire ton prochain repas à base de végétaux, tu as besoin de fruits et légumes"
+        2: "Nous avons de nombreux produits consommables sur terre"
+        3: "Aide toi des commercants pour trouver les produits de saison et manger durablement"
+    instructions: "Clique sur les produits de saison pour les ajouter à ton panier"
+    dealers:
+        automn: "Salut xxxx, que te ferait il plaisir en ce mois d'octobre ?"
+        winter: "Bonsoir xxxx, il fait froid aujourd'hui, les vacances d'hiver se sont bien passés ?"
+        spring: "Je n'ai pas de chocolat pour pâques mais j'ai de bons fruits et légumes xxxx"
+        summer: "xxxx, il fait chaud aujourd'hui non ?"
+
+transport:
+    narration:
+        1: "Tes vacances se sont bien passées? rentrons chez nous ..."
+        2: "Je t'ai sélectionné 3 trajets, choisis le plus optimal"
+    instructions: "Sélectionne le trajet qui émettra le moins de carbone par passagers en cumulé"
+
+
+house:
+    narration:
+        1: "De retour chez toi, tu reçois ta première facture d'électricité."
+        2: "Non, non, ce n'est pas une erreur, il va falloir réduire ta consommation..."
+        3: "Parcours ta maison à la recherche des appareils énergivores"
+    instructions: "Navigue au travers des pièces et clique sur les objets énergivores à éviter."
+
+end:
+    narrations:
+        1: "Tu es prêt à vivre en autonomie, nos chemins se séparent ici ..."

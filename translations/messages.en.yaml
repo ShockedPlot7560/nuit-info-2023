@@ -1,0 +1,51 @@
+name: "Anglais"
+
+narration:
+    enter_continue: "Press Entrance to continue"
+
+entrypoint:
+    narration:
+        1: "Welcome to Earth"
+        2: "I am your personal assistant, let me guide you ..."
+        3: "Frequently resolved and you will be ready to live independently and responsible!"
+
+factory:
+    narration:
+        1: "We have a greenhouse gas emission problem"
+        2: "Help us objects with the biggest CO2 emissions"
+        3: "At the end of the battle, we can start finding solutions together"
+    instructions: "Click on the object that emits the most carbon during its manufacturing cycle"
+
+user_creation:
+    narration:
+        1: "I think you are ready, let me provide you with an identity ..."
+
+market:
+    narration:
+        1: "To make you your next meal based on plants, you need fruits and vegetables"
+        2: "We have many consumable products on earth"
+        3: "Help you traders to find seasonal products and eat sustainably"
+    instructions: "Click on seasonal products to add them to your basket"
+    dealers:
+        automn: "Hi xxxx, what would you please you in October?"
+        winter: "Good evening XXXX, it's cold today, have the winter holidays went well?"
+        spring: "I don't have chocolate for Easter but I have good xxxx fruits and vegetables"
+        summer: "XXXX, it's hot today, right?"
+
+transport:
+    narration:
+        1: "Have your vacation went well? Let's go home ..."
+        2: "I selected you 3 journeys, choose the most optimal"
+    instructions: "Select the journey that will emit the least carbon by cumulative passengers"
+
+
+house:
+    narration:
+        1: "Back home, you receive your first electricity bill."
+        2: "No, no, it's not an error, you will have to reduce your consumption ..."
+        3: "Your home your house looking for energy -consuming devices"
+    instructions: "Navigate through parts and click on energy -consuming objects to avoid."
+
+end:
+    narrations:
+        1: "You are ready to live independently, our paths separate here ..."
