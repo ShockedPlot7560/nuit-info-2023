@@ -49,3 +49,8 @@ house:
 end:
     narrations:
         1: "You are ready to live independently, our paths separate here ..."
+
+player:
+    pseudo: "Pseudo"
+    next: "Following"
+    select_avatar: "Choose your avatar"
