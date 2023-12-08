@@ -5,6 +5,8 @@ import { Toast } from "primereact/toast";
 import { Card } from "primereact/card";
 import { ColorPicker } from "primereact/colorpicker";
 import "../../../styles/Player.css";
+import Cookies from 'js-cookie';
+import i18n from '../../../utils/i18n';
 
 const avatars = Array.from({ length: 6 }, (_, i) => `${i + 1}.svg`);
 
@@ -26,49 +28,74 @@ function Player(props) {
 
   const onAvatarClick = (avatar) => {
     setSelectedAvatar(avatar);
+    Cookies.set('avatar', avatar);
+    document.location.href = "/fruits";
   };
+
+  const onPseudoChange = (e) => {
+    setPseudo(e.target.value);
+    Cookies.set('pseudo', e.target.value);
+  }
 
   return (
     <div className="player-form">
-      <Toast ref={toastRef} />
-      <span className="p-float-label">
-        <InputText
-          id="pseudo"
-          value={pseudo}
-          onChange={(e) => setPseudo(e.target.value)}
-        />
-        <label htmlFor="pseudo">Pseudo</label>
-      </span>
-      <br />
-
-      <div className="avatars-grid">
-        {avatars.map((avatar) => (
-          <Card
-            key={avatar}
-            className={`avatar-card ${selectedAvatar === avatar ? "selected" : ""}`}
-            onClick={() => onAvatarClick(avatar)}
-          >
-            <img
-              src={`/img/avatars/${avatar}`}
-              alt={`Avatar ${avatar.split(".")[0]}`}
-              style={{ filter: `fill(${hairColor})` }}
-            />
-          </Card>
-        ))}
-      </div>
-
-      <ColorPicker
-        value={hairColor}
-        onChange={(e) => setHairColor(e.value)}
-        style={{ marginTop: "16px" }}
-      />
-
-      <Button
-        className="button"
-        type="button"
-        label="Valider"
-        onClick={onButtonClick}
-      />
+        <div id={"playerName-container"} style={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            justifyContent: "center",
+            width: "100%",
+            height: "100%",
+            position: "absolute",
+            backgroundColor: "rgba(0,0,0,1)"
+        }}>
+            <span className="p-float-label">
+                <InputText
+                    id="pseudo"
+                    value={pseudo}
+                    onChange={onPseudoChange}
+                />
+                <label htmlFor="pseudo">{i18n.t("player.pseudo")}</label>
+                <Button
+                    className="button"
+                    type="button"
+                    label={i18n.t("player.next")}
+                    onClick={() => {
+                        document.getElementById("playerName-container").style.display = "none";
+                        document.getElementById("playerAvatar-container").style.display = "flex";
+                    }}
+                />
+            </span>
+        </div>
+        <div id={"playerAvatar-container"} style={{
+            display: "none",
+            flexDirection: "column",
+            alignItems: "center",
+            justifyContent: "center",
+            width: "100%",
+            height: "100%",
+            position: "absolute",
+            overflow: "auto",
+            backgroundColor: "rgba(0,0,0,1)"
+        }}>
+            <h3 style={{color:"white"}}>{i18n.t("player.select_avatar")}</h3>
+            <div className="avatars-grid" style={{width: "50%", height: "50%"}}>
+                {avatars.map((avatar) => (
+                    <Card
+                        key={avatar}
+                        className={`avatar-card ${selectedAvatar === avatar ? "selected" : ""}`}
+                        onClick={() => onAvatarClick(avatar)}
+                        style={{width: "30%"}}
+                    >
+                        <img
+                            src={`/img/avatars/${avatar}`}
+                            alt={`Avatar ${avatar.split(".")[0]}`}
+                            style={{ filter: `fill(${hairColor})` }}
+                        />
+                    </Card>
+                ))}
+            </div>
+        </div>
     </div>
   );
 }

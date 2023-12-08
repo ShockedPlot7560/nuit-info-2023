@@ -34,6 +34,14 @@ export default function ChooseLang() {
         es: {
             key: "es",
             icon: "es"
+        },
+        mg: {
+            key: "mg",
+            icon: "mg"
+        },
+        de: {
+            key: "de",
+            icon: "de"
         }
     };
     const selectedLanguage = languages[i18n.language];

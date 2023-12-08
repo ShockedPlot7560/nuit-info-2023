@@ -1,0 +1,51 @@
+name: "Malgache"
+
+narration:
+    enter_continue: "Press ny fidirana hanohy"
+
+entrypoint:
+    narration:
+        1: "Tongasoa eto an-tany"
+        2: "Mpanampy anao manokana aho, avelao aho hitarika anao ..."
+        3: "Voavaha matetika ary ho vonona hiaina tsy miankina sy tompon'andraikitra ianao!"
+
+factory:
+    narration:
+        1: "Manana olana entona entona maitso izahay"
+        2: "Ampio izahay ireo zavatra miaraka amin'ny famoahana CO2 lehibe indrindra"
+        3: "Amin'ny faran'ny ady dia afaka manomboka mahita vahaolana miaraka isika"
+    instructions: "Kitiho ny zavatra izay mamoaka ny karbonika indrindra mandritra ny tsingerin'ny famokarana azy"
+
+user_creation:
+    narration:
+        1: "Mino aho fa vonona ianao, avelao aho hanome anao ny maha-izy azy ..."
+
+market:
+    narration:
+        1: "Mba hahatonga anao ny sakafo manaraka anao mifototra amin'ny zavamaniry, mila voankazo sy legioma ianao"
+        2: "Manana vokatra marobe maro isika eto an-tany"
+        3: "Ampio ny mpivarotra mba hahitana vokatra ara-potoana ary mihinana maharitra"
+    instructions: "Kitiho ny vokatra vanin-taona manampy azy ireo amin'ny harona"
+    dealers:
+        automn: "Salama XXXX, inona no tianao ho anao amin'ny Oktobra?"
+        winter: "Mirary soa xxxx, mangatsiaka izao, mandeha tsara ve ny fialantsasatry ny ririnina?"
+        spring: "Tsy manana sôkôla ho an'ny Paska aho fa manana voankazo sy legioma tsara aho"
+        summer: "XXXX, Mafana ankehitriny, sa tsy izany?"
+
+transport:
+    narration:
+        1: "Efa mandeha tsara ve ny fialan-tsasatrao? Andao hody ..."
+        2: "Nisafidy anao 3 dia ny dia, safidio ny tsara indrindra"
+    instructions: "Safidio ny dia izay hamela ny karbonika kely indrindra amin'ny alàlan'ny mpandeha cumulative"
+
+
+house:
+    narration:
+        1: "Miverina any an-trano, ianao dia mandray ny volavolan-jiro voalohany."
+        2: "Tsia, tsia, tsy hadisoana izany, tsy maintsy hampihena ny fanjifanao ianao ..."
+        3: "Ny tranonao ny tranonao mitady fitaovana-fitaovana"
+    instructions: "Mandehana amin'ny alàlan'ny ampahany ary tsindrio ny angovo-angovo mba hialana."
+
+end:
+    narrations:
+        1: "Vonona ny hiaina mahaleo tena ianao, ny lalantsika misaraka eto ..."

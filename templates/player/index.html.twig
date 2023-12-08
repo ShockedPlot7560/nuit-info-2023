@@ -1,5 +1,10 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
+  <div {{ react_component('StartNarration', {
+    sequence: [
+      "user_creation.narration.1"|trans,
+    ]
+  }) }}></div>
   <div {{ react_component('Player/Player') }}></div>
 {% endblock %}

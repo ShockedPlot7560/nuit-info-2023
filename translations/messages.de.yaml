@@ -1,0 +1,56 @@
+name: "Allemand"
+
+narration:
+    enter_continue: "Drücken Sie Eingang, um fortzufahren"
+
+entrypoint:
+    narration:
+        1: "Willkommen bei der Erde"
+        2: "Ich bin dein persönlicher Assistent, lass mich dich führen ..."
+        3: "Häufig gelöst und Sie werden bereit sein, unabhängig und verantwortungsbewusst zu leben!"
+
+factory:
+    narration:
+        1: "Wir haben ein Treibhausgasemissionsproblem"
+        2: "Helfen Sie uns Objekte mit den größten CO2 -Emissionen"
+        3: "Am Ende der Schlacht können wir gemeinsam anfangen, Lösungen zu finden"
+    instructions: "Klicken Sie auf das Objekt, das während seines Fertigungszyklus den größten Kohlenstoff abgibt"
+
+user_creation:
+    narration:
+        1: "Ich denke, Sie sind bereit, lassen Sie mich Ihnen eine Identität geben ..."
+
+market:
+    narration:
+        1: "Um Sie zu Ihrer nächsten Mahlzeit zu machen, die auf Pflanzen basieren, benötigen Sie Obst und Gemüse"
+        2: "Wir haben viele konsumierbare Produkte auf der Erde"
+        3: "Helfen Sie Händlern, saisonale Produkte zu finden und nachhaltig zu essen"
+    instructions: "Klicken Sie auf saisonale Produkte, um sie zu Ihrem Korb hinzuzufügen"
+    dealers:
+        automn: "Hallo xxxx, was würden Sie Ihnen im Oktober gefallen?"
+        winter: "Guten Abend xxxx, es ist heute kalt, haben die Winterferien gut gelaufen?"
+        spring: "Ich habe keine Schokolade für Ostern, aber ich habe gute xxxx -Obst und Gemüse"
+        summer: "Xxxx, es ist heute heiß, oder?"
+
+transport:
+    narration:
+        1: "Haben Sie Ihren Urlaub gut gelaufen? Gehen wir nach Hause ..."
+        2: "Ich habe Sie 3 Reisen ausgewählt, die optimalste auswählen"
+    instructions: "Wählen Sie die Reise aus, die den geringsten Kohlenstoff durch kumulative Passagiere ausstrahlt"
+
+
+house:
+    narration:
+        1: "Zu Hause erhalten Sie Ihre erste Stromrechnung."
+        2: "Nein, nein, es ist kein Fehler, Sie müssen Ihren Verbrauch reduzieren ..."
+        3: "Ihr Zuhause Ihr Haus auf der Suche nach Energieverbreitung von Geräten"
+    instructions: "Navigieren Sie durch Teile und klicken Sie auf Energieverbrennungsobjekte, um sie zu vermeiden."
+
+end:
+    narrations:
+        1: "Sie sind bereit, unabhängig zu leben, unsere Wege trennen sich hier ..."
+
+player:
+    pseudo: "Pseudo"
+    next: "Folgen"
+    select_avatar: "Wählen Sie Ihren Avatar"
