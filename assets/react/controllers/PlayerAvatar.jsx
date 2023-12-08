@@ -10,7 +10,8 @@ export default function PlayerAvatar() {
     let avatar = Cookies.get('avatar');
     const name = Cookies.get('pseudo');
     const superSayen = Cookies.get('superSayen', false);
-    if (superSayen == true){
+    console.log(superSayen)
+    if (superSayen == "true"){
         avatar = "7.svg";
     }
 
