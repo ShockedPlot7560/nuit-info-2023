@@ -1,0 +1,10 @@
+name: "English"
+
+narration:
+    enter_continue: "Press Entrance to continue"
+
+factory:
+    narration:
+        1: "Welcome to Earth"
+        2: "I am your personal assistant, let me guide you ..."
+        3: "Frequently resolved and you will be ready to live independently and responsible!"

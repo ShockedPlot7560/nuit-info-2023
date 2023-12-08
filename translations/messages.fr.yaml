@@ -1,0 +1,10 @@
+name: "Français"
+
+narration:
+    enter_continue: "Appuyez sur Entrée pour continuer"
+
+factory:
+    narration:
+        1: "Bienvenue sur Terre"
+        2: "Je suis ton assistant personnel, laisse moi te guider ..."
+        3: "Résous les défis et tu seras prêt à vivre de manière autonome et responsable !"

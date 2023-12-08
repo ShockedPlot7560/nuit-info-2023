@@ -1,0 +1,10 @@
+name: "Espagnol"
+
+narration:
+    enter_continue: "Entrada de prensa para continuar"
+
+factory:
+    narration:
+        1: "Bienvenido a la tierra"
+        2: "Soy tu asistente personal, déjame guiarte ..."
+        3: "¡Con frecuencia resuelto y estará listo para vivir de forma independiente y responsable!"

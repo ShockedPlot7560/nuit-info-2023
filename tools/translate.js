@@ -1,4 +1,4 @@
-import puppeteer from 'puppeteer';
+const puppeteer = require('puppeteer');
 
 async function getPage() {
   const browser = await puppeteer.launch();
@@ -58,16 +58,45 @@ async function translate(source_lang, target_lang, text) {
     await page.waitForTimeout(500);
   } while (translatedText === "Detect language")
 
-  console.log("Translation done, close browser");
+  console.log("Translation done, close browser", text);
   await browser.close();
 
-  return translatedText;
+  return translatedText.trim();
 }
 
-const toTranslate = "Je m’appelle Jessica. Je suis une fille, je suis française et j’ai treize ans. Je vais à l’école à Nice, mais j’habite à Cagnes-Sur-Mer. J’ai deux frères. Le premier s’appelle Thomas, il a quatorze ans. Le second s’appelle Yann et il a neuf ans. Mon papa est italien et il est fleuriste. Ma mère est allemande et est avocate. Mes frères et moi parlons français, italien et allemand à la maison. Nous avons une grande maison avec un chien, un poisson et deux chats.";
+const toTranslate = "Résous les défis et tu seras prêt à vivre de manière autonome et responsable !";
 const source_lang = "fr";
 
-await translate(source_lang, "en", toTranslate).then((translatedText) => {
-  console.log("Translation: ", translatedText);
+const fs = require('fs');
+
+const baseLangPath = 'translations/messages.fr.yaml';
+const baseLangContent = fs.readFileSync(baseLangPath, 'utf8');
+
+fs.readdirSync('translations').forEach(file => {
+  if(file.includes('messages') && !file.includes("fr.yaml")) {
+    // extract lang from messages.fr.yaml
+    const lang = file.split('.')[1];
+
+    let contenuFichier = fs.readFileSync("translations/messages." + lang + ".yaml", 'utf8');
+    if (!contenuFichier.includes("Bienvenue")){
+      return;
+    }
+
+    const chainesExtraites = baseLangContent.match(/"([^"]*)"/g);
+
+    let promises = []
+    chainesExtraites.forEach((chaine) => {
+        const chaineToTranslate = chaine.substring(1, chaine.length - 1);
+        promises.push(translate(source_lang, lang, chaineToTranslate).then((translatedText) => {
+          // replace text in file
+          contenuFichier = contenuFichier.replace(chaine, '"' + translatedText + '"');
+          console.log("Translation: ", translatedText);
+        }));
+    });
+
+    return Promise.all(promises).then(() => {
+      console.log(contenuFichier)
+      fs.writeFileSync("translations/messages." + lang + ".yaml", contenuFichier);
+    });
+  }
 });
-getLanguagesLocale();

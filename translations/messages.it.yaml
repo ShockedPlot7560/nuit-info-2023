@@ -1,0 +1,10 @@
+name: "Italian"
+
+narration:
+    enter_continue: "Premere l'ingresso per continuare"
+
+factory:
+    narration:
+        1: "Benvenuti sulla Terra"
+        2: "Sono il tuo assistente personale, lascia che ti guidi ..."
+        3: "Risolto frequentemente e sarai pronto a vivere in modo indipendente e responsabile!"
