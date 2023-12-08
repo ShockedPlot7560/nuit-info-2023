@@ -36,6 +36,28 @@ market:
         winter: "Bonsoir, il fait froid aujourd'hui, les vacances d'hiver se sont bien passés ?"
         spring: "Je n'ai pas de chocolat pour pâques mais j'ai de bons fruits et légumes"
         summer: "Il fait chaud aujourd'hui non ?"
+    toast:
+        valid: "Valide"
+        success: "Bravo, c'est bien un aliment de saison"
+        invalid: "Invalide"
+        error: "Non, ce n'est pas un alimenent de saison"
+    fruit:
+        citrouille: "Citrouille"
+        poire: "Poire"
+        onion: "Oignon"
+        pomme: "Pomme"
+        pdt: "Pomme de terre"
+        aubergine: "Aubergine"
+        artichaut: "Artichaut"
+        tomate: "Tomate"
+        carotte: "Carotte"
+        fraise: "Fraise"
+        poivron: "Poivron"
+        olive: "Olive"
+        pasteque: "Pastèque"
+        citron: "Citron"
+        radis: "Radis"
+
 
 industry:
     names:

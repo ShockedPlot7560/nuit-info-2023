@@ -25,8 +25,8 @@ function Autunm(props) {
     if (rAutunm.includes(fruitOrVegetable)) {
       toastRef.current.show({
         severity: "success",
-        summary: "Valid",
-        detail: `Bravo, c'est bien un aliment de saison`,
+        summary: i18n.t("market.toast.valid"),
+        detail: i18n.t("market.toast.success"),
       });
       const right = nbRightAns;
       setnbRightAns(right + 1);
@@ -36,8 +36,8 @@ function Autunm(props) {
     } else {
       toastRef.current.show({
         severity: "error",
-        summary: "Invalid",
-        detail: `Non, ce n'est pas un alimenent de saison`,
+        summary: i18n.t("market.toast.invalid"),
+        detail: i18n.t("market.toast.error"),
       });
     }
     setDisabledButtons((prevButtons) => [...prevButtons, fruitOrVegetable]);
@@ -86,7 +86,7 @@ function Autunm(props) {
 
       <div className="flex mt-4">
         <Button
-          label="Citrouille"
+          label={i18n.t("market.fruit.citrouille")}
           className="mr-2"
           onClick={() => onButtonClick("pumpkin")}
           disabled={isButtonDisabled("pumpkin")}
@@ -98,7 +98,7 @@ function Autunm(props) {
           ></img>
         </Button>
         <Button
-          label="Poire"
+          label={i18n.t("market.fruit.poire")}
           className="mr-2"
           onClick={() => onButtonClick("pear")}
           disabled={isButtonDisabled("pear")}
@@ -110,7 +110,7 @@ function Autunm(props) {
           ></img>
         </Button>
         <Button
-          label="Onion"
+          label={i18n.t("market.fruit.onion")}
           className="mr-2"
           onClick={() => onButtonClick("onion")}
           disabled={isButtonDisabled("onion")}
@@ -122,7 +122,7 @@ function Autunm(props) {
           ></img>
         </Button>
         <Button
-          label="Pomme"
+          label={i18n.t("market.fruit.pomme")}
           className="mr-2"
           onClick={() => onButtonClick("apple")}
           disabled={isButtonDisabled("apple")}
@@ -134,7 +134,7 @@ function Autunm(props) {
           ></img>
         </Button>
         <Button
-          label="Pomme de terre"
+          label={i18n.t("market.fruit.pdt")}
           className="mr-2"
           onClick={() => onButtonClick("potato")}
           disabled={isButtonDisabled("potato")}

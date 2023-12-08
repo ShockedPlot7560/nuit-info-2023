@@ -19,7 +19,7 @@ function Summer(props) {
   const [disabledButtons, setDisabledButtons] = useState([]);
   const [nbButtons, setnbButtons] = useState(0);
   const [nbRightAns, setnbRightAns] = useState(0);
-  const [isRoundFinished, setIsRoundFinished] = useState(false);
+  let [isRoundFinished, setIsRoundFinished] = useState(false);
 
     window.addEventListener(('keydown'), (e) => {
         if (e.key === 'Enter' && document.getElementById("dialog")) {
@@ -31,8 +31,8 @@ function Summer(props) {
     if (rSummer.includes(fruitOrVegetable)) {
       toastRef.current.show({
         severity: "success",
-        summary: "Valid",
-        detail: `Bravo, c'est bien un aliment de saison`,
+          summary: i18n.t("market.toast.valid"),
+          detail: i18n.t("market.toast.success"),
       });
       const right = nbRightAns;
       setnbRightAns(right + 1);
@@ -42,8 +42,8 @@ function Summer(props) {
     } else {
       toastRef.current.show({
         severity: "error",
-        summary: "Invalid",
-        detail: `Non, ce n'est pas un alimenent de saison`,
+          summary: i18n.t("market.toast.invalid"),
+          detail: i18n.t("market.toast.error"),
       });
     }
     setDisabledButtons((prevButtons) => [...prevButtons, fruitOrVegetable]);
@@ -92,7 +92,7 @@ function Summer(props) {
 
       <div className="flex mt-4">
         <Button
-          label="Citrouille"
+          label={i18n.t("market.fruit.citrouille")}
           className="mr-2"
           onClick={() => onButtonClick("pumpkin")}
           disabled={isButtonDisabled("pumpkin")}
@@ -104,7 +104,7 @@ function Summer(props) {
           ></img>
         </Button>
         <Button
-          label="Fraise"
+          label={i18n.t("market.fruit.fraise")}
           className="mr-2"
           onClick={() => onButtonClick("strawberry")}
           disabled={isButtonDisabled("strawberry")}
@@ -116,7 +116,7 @@ function Summer(props) {
           ></img>
         </Button>
         <Button
-          label="Tomate"
+          label={i18n.t("market.fruit.tomate")}
           className="mr-2"
           onClick={() => onButtonClick("tomato")}
           disabled={isButtonDisabled("tomato")}
@@ -128,7 +128,7 @@ function Summer(props) {
           ></img>
         </Button>
         <Button
-          label="Poivron"
+          label={i18n.t("market.fruit.poivron")}
           className="mr-2"
           onClick={() => onButtonClick("pepper")}
           disabled={isButtonDisabled("pepper")}
@@ -140,7 +140,7 @@ function Summer(props) {
           ></img>
         </Button>
         <Button
-          label="Olive"
+          label={i18n.t("market.fruit.olive")}
           className="mr-2"
           onClick={() => onButtonClick("olive")}
           disabled={isButtonDisabled("olive")}

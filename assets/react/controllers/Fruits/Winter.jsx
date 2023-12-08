@@ -31,19 +31,20 @@ function Winter(props) {
     if (rSpring.includes(fruitOrVegetable)) {
       toastRef.current.show({
         severity: "success",
-        summary: "Valid",
-        detail: `Bravo, c'est bien un aliment de saison`,
+          summary: i18n.t("market.toast.valid"),
+          detail: i18n.t("market.toast.success"),
       });
       const right = nbRightAns;
       setnbRightAns(right + 1);
       if (nbRightAns === 2) {
         setIsRoundFinished(true);
+        document.location.href = "/house";
       }
     } else {
       toastRef.current.show({
         severity: "error",
-        summary: "Invalid",
-        detail: `Non, ce n'est pas un alimenent de saison`,
+          summary: i18n.t("market.toast.invalid"),
+          detail: i18n.t("market.toast.error"),
       });
     }
     setDisabledButtons((prevButtons) => [...prevButtons, fruitOrVegetable]);
@@ -89,7 +90,7 @@ function Winter(props) {
 
       <div className="flex mt-4">
         <Button
-          label="Pastèque"
+          label={i18n.t("market.fruit.pasteque")}
           className="mr-2"
           onClick={() => onButtonClick("watermelon")}
           disabled={isButtonDisabled("watermelon")}
@@ -101,7 +102,7 @@ function Winter(props) {
           ></img>
         </Button>
         <Button
-          label="Citron"
+          label={i18n.t("market.fruit.citron")}
           className="mr-2"
           onClick={() => onButtonClick("lemon")}
           disabled={isButtonDisabled("lemon")}
@@ -113,7 +114,7 @@ function Winter(props) {
           ></img>
         </Button>
         <Button
-          label="Radis"
+          label={i18n.t("market.fruit.radis")}
           className="mr-2"
           onClick={() => onButtonClick("radish")}
           disabled={isButtonDisabled("radish")}
@@ -125,7 +126,7 @@ function Winter(props) {
           ></img>
         </Button>
         <Button
-          label="Olive"
+          label={i18n.t("market.fruit.olive")}
           className="mr-2"
           onClick={() => onButtonClick("olive")}
           disabled={isButtonDisabled("olive")}
@@ -137,7 +138,7 @@ function Winter(props) {
           ></img>
         </Button>
         <Button
-          label="Poivron"
+          label={i18n.t("market.fruit.poivron")}
           className="mr-2"
           onClick={() => onButtonClick("pepper")}
           disabled={isButtonDisabled("pepper")}
@@ -149,7 +150,7 @@ function Winter(props) {
           ></img>
         </Button>
         <Button
-          label="Onion"
+          label={i18n.t("market.fruit.onion")}
           className="mr-2"
           onClick={() => onButtonClick("onion")}
           disabled={isButtonDisabled("onion")}

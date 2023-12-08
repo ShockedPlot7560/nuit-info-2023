@@ -32,8 +32,8 @@ function Fruits(props) {
     if (rSpring.includes(fruitOrVegetable)) {
       toastRef.current.show({
         severity: "success",
-        summary: "Valid",
-        detail: `Bravo, c'est bien un aliment de saison`,
+          summary: i18n.t("market.toast.valid"),
+          detail: i18n.t("market.toast.success"),
       });
       const right = nbRightAns;
       setnbRightAns(right + 1)
@@ -43,8 +43,8 @@ function Fruits(props) {
     } else {
       toastRef.current.show({
         severity: "error",
-        summary: "Invalid",
-        detail: `Non, ce n'est pas un alimenent de saison`,
+          summary: i18n.t("market.toast.invalid"),
+          detail: i18n.t("market.toast.error"),
       });
     }
     setDisabledButtons((prevButtons) => [...prevButtons, fruitOrVegetable]);
@@ -93,7 +93,7 @@ function Fruits(props) {
 
       <div className="flex mt-4">
         <Button
-          label="Aubergine"
+          label={i18n.t("market.fruit.aubergine")}
           className="mr-2"
           onClick={() => onButtonClick("eggplant")}
           disabled={isButtonDisabled("eggplant")}
@@ -105,7 +105,7 @@ function Fruits(props) {
           ></img>
         </Button>
         <Button
-          label="Poire"
+          label={i18n.t("market.fruit.poire")}
           className="mr-2"
           onClick={() => onButtonClick("pear")}
           disabled={isButtonDisabled("pear")}
@@ -117,7 +117,7 @@ function Fruits(props) {
           ></img>
         </Button>
         <Button
-          label="Artichaut"
+          label={i18n.t("market.fruit.artichaut")}
           className="mr-2"
           onClick={() => onButtonClick("artichoke")}
           disabled={isButtonDisabled("artichoke")}
@@ -129,7 +129,7 @@ function Fruits(props) {
           ></img>
         </Button>
         <Button
-          label="Tomate"
+          label={i18n.t("market.fruit.tomate")}
           className="mr-2"
           onClick={() => onButtonClick("tomato")}
           disabled={isButtonDisabled("tomato")}
@@ -141,7 +141,7 @@ function Fruits(props) {
           ></img>
         </Button>
         <Button
-          label="Carotte"
+          label={i18n.t("market.fruit.carotte")}
           className="mr-2"
           onClick={() => onButtonClick("carrot")}
           disabled={isButtonDisabled("carrot")}
@@ -153,7 +153,7 @@ function Fruits(props) {
           ></img>
         </Button>
         <Button
-          label="Pomme de terre"
+          label={i18n.t("market.fruit.pdt")}
           className="mr-2"
           onClick={() => onButtonClick("potato")}
           disabled={isButtonDisabled("potato")}
