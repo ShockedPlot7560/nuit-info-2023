@@ -1,5 +1,12 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
+  <div {{ react_component('StartNarration', {
+    sequence: [
+      "Bienvenue sur Terre",
+      "Je suis ton assistant personnel, laisse moi te guider ...",
+      "Résous les défis et tu seras prêt à vivre de manière autonome et responsable !"
+    ]
+  }) }}></div>
   <div {{ react_component('House/House', { 'navigation': navigation }) }}></div>
 {% endblock %}
