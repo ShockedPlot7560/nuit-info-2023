@@ -32,11 +32,13 @@
         "build": "encore production --progress"
     },
     "dependencies": {
+        "array-shuffle": "^3.0.0",
         "p-try": "^3.0.0",
         "pkg-up": "^5.0.0",
         "primeicons": "^6.0.1",
         "primereact": "^10.2.1",
         "puppeteer": "^21.6.0",
+        "react-router-dom": "^6.20.1",
         "react-type-animation": "^3.2.0",
         "to-fast-properties": "^4.0.0"
     }
