@@ -2,7 +2,7 @@ import React from 'react';
 import { PrimeReactProvider } from 'primereact/api';
 import { Button } from 'primereact/button';
 
-const navigationButtonStyle = `bg-white opacity-50 hover:opacity-80 transition-opacity duration-500`
+const navigationButtonStyle = `bg-black opacity-50 hover:opacity-80 transition-opacity duration-500`
 
 export default function (props) {
 
@@ -32,7 +32,7 @@ export default function (props) {
                             icon="pi pi-chevron-up"
                             rounded text raised
                             aria-label="Filter"
-                            className={`${navigationButtonStyle} mt-5`}
+                            className={`${navigationButtonStyle} mt-20`}
                             onClick={() => props.navigateTo(props.navigation[0])}
                         />
                     :
