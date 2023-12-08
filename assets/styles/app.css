@@ -79,7 +79,6 @@ body {
   text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.8);
 }
 
-<<<<<<< HEAD
 .rainbow {
   background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
   background-size: 1800% 1800%;
@@ -109,10 +108,10 @@ body {
   0%{background-position:0% 82%}
   50%{background-position:100% 19%}
   100%{background-position:0% 82%}
-=======
+
+
 body > div:nth-child(2) > div > div > div > div.p-card-content {
   display: flex;
   flex-direction: column;
   gap: 1rem;
->>>>>>> 243ceb8940472649a697e9b5fea4e5eb3a0d4a00
 }
