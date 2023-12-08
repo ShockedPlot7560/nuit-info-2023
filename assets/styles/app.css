@@ -13,42 +13,42 @@ body {
 
 /* Rooms background */
 .bg-garage {
-    background-image: url('/assets/img/rooms/garage.webp');
+    background-image: url('/public/img/rooms/garage.webp');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
 }
 
 .bg-outdoor {
-    background-image: url('/assets/img/rooms/outdoor.webp');
+    background-image: url('/public/img/rooms/outdoor.webp');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
 }
 
 .bg-kitchen {
-    background-image: url('/assets/img/rooms/kitchen.webp');
+    background-image: url('/public/img/rooms/kitchen.webp');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
 }
 
 .bg-livingroom {
-    background-image: url('/assets/img/rooms/livingroom.webp');
+    background-image: url('/public/img/rooms/livingroom.webp');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
 }
 
 .bg-bedroom {
-  background-image: url('/assets/img/rooms/bedroom.webp');
+  background-image: url('/public/img/rooms/bedroom.webp');
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
 }
 
 .bg-bathroom {
-    background-image: url('/assets/img/rooms/bathroom.webp');
+    background-image: url('/public/img/rooms/bathroom.webp');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;

@@ -8,12 +8,6 @@ export default function (props) {
         setCurrentRoomName(newRoomName);
     };
 
-    const objectList = [
-        {positionX: 532, positionY: 753},
-        {positionX: 365, positionY: 211},
-        {positionX: 1321, positionY: 345},
-    ]
-
     return (
         <div className={`
             ${currentRoomName === 'garage' ? 'bg-garage' : ''}
@@ -27,7 +21,6 @@ export default function (props) {
                 currentRoomName={currentRoomName}
                 navigateTo={handleRoomChange}
                 navigation={props.navigation[currentRoomName].neighbours}
-                objectList={objectList}
             />
         </div>
     )
