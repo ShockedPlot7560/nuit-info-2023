@@ -15,3 +15,4 @@ import "/node_modules/flag-icons/css/flag-icons.min.css";
 
 // start the Stimulus application
 import './bootstrap';
+import './keycheck';
