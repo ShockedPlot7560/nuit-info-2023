@@ -1,21 +1,20 @@
 import React, { useState, useRef } from "react";
 import { Button } from "primereact/button";
 import { Toast } from "primereact/toast";
-import Summer from "./Summer"
 import "../../../styles/Fruits.css";
 
-function Fruits(props) {
+function Winter(props) {
   const toastRef = useRef();
-  const [season, setSeason] = useState("spring.svg");
+  const [season, setSeason] = useState("winter.svg");
   const [pSpring] = useState([
-    "eggplant",
-    "pear",
-    "artichoke",
-    "tomato",
-    "carrot",
-    "potato",
+    "watermelon",
+    "lemon",
+    "radish",
+    "olive",
+    "pepper",
+    "peach",
   ]);
-  const [rSpring] = useState(["pear", "carrot", "potato"]);
+  const [rSpring] = useState(["olive", "lemon", "radish"]);
   const [disabledButtons, setDisabledButtons] = useState([]);
   const [nbButtons, setnbButtons] = useState(0);
   const [nbRightAns, setnbRightAns] = useState(0);
@@ -29,9 +28,9 @@ function Fruits(props) {
         detail: `Bravo, c'est bien un aliment de saison`,
       });
       const right = nbRightAns;
-      setnbRightAns(right + 1)
+      setnbRightAns(right + 1);
       if (nbRightAns === 2) {
-        setIsRoundFinished(true)
+        setIsRoundFinished(true);
       }
     } else {
       toastRef.current.show({
@@ -41,6 +40,7 @@ function Fruits(props) {
       });
     }
     setDisabledButtons((prevButtons) => [...prevButtons, fruitOrVegetable]);
+    setnbButtons((prevNbButton) => prevNbButton++);
     const button = nbButtons;
     setnbButtons(button + 1);
     if (nbButtons === 5) {
@@ -51,10 +51,6 @@ function Fruits(props) {
   const isButtonDisabled = (fruitOrVegetable) => {
     return disabledButtons.includes(fruitOrVegetable);
   };
-
-  if (isRoundFinished) {
-    return <Summer />;
-  }
 
   return (
     <div className="flex flex-col justify-center items-center h-screen w-screen">
@@ -69,80 +65,81 @@ function Fruits(props) {
 
       <div className="flex mt-4">
         <Button
-          label="Aubergine"
+          label="Pastèque"
           className="mr-2"
-          onClick={() => onButtonClick("eggplant")}
-          disabled={isButtonDisabled("eggplant")}
+          onClick={() => onButtonClick("watermelon")}
+          disabled={isButtonDisabled("watermelon")}
         >
           <img
-            alt="Aubergine"
-            src="/img/vegetables/eggplant.svg"
+            alt="Pastèque"
+            src="/img/fruits/watermelon.svg"
             className="h-2rem img"
           ></img>
         </Button>
         <Button
-          label="Poire"
+          label="Citron"
           className="mr-2"
-          onClick={() => onButtonClick("pear")}
-          disabled={isButtonDisabled("pear")}
+          onClick={() => onButtonClick("lemon")}
+          disabled={isButtonDisabled("lemon")}
         >
           <img
-            alt="Poire"
-            src="/img/fruits/pear.svg"
+            alt="Citron"
+            src="/img/fruits/lemon.svg"
             className="h-2rem img"
           ></img>
         </Button>
         <Button
-          label="Artichaut"
+          label="Radis"
           className="mr-2"
-          onClick={() => onButtonClick("artichoke")}
-          disabled={isButtonDisabled("artichoke")}
+          onClick={() => onButtonClick("radish")}
+          disabled={isButtonDisabled("radish")}
         >
           <img
-            alt="Artichaut"
-            src="/img/vegetables/artichoke.svg"
+            alt="Radis"
+            src="/img/vegetables/radish.svg"
             className="h-2rem img"
           ></img>
         </Button>
         <Button
-          label="Tomate"
+          label="Olive"
           className="mr-2"
-          onClick={() => onButtonClick("tomato")}
-          disabled={isButtonDisabled("tomato")}
+          onClick={() => onButtonClick("olive")}
+          disabled={isButtonDisabled("olive")}
         >
           <img
-            alt="Tomate"
-            src="/img/vegetables/tomato.svg"
+            alt="Olive"
+            src="/img/vegetables/olive.svg"
             className="h-2rem img"
           ></img>
         </Button>
         <Button
-          label="Carotte"
+          label="Poivron"
           className="mr-2"
-          onClick={() => onButtonClick("carrot")}
-          disabled={isButtonDisabled("carrot")}
+          onClick={() => onButtonClick("pepper")}
+          disabled={isButtonDisabled("pepper")}
         >
           <img
-            alt="Carotte"
-            src="/img/vegetables/carrot.svg"
+            alt="Poivron"
+            src="/img/vegetables/pepper.svg"
             className="h-2rem img"
           ></img>
         </Button>
         <Button
-          label="Pomme de terre"
+          label="Onion"
           className="mr-2"
-          onClick={() => onButtonClick("potato")}
-          disabled={isButtonDisabled("potato")}
+          onClick={() => onButtonClick("onion")}
+          disabled={isButtonDisabled("onion")}
         >
           <img
-            alt="Pomme de terre"
-            src="/img/vegetables/potato.svg"
+            alt="Onion"
+            src="/img/vegetables/onion.svg"
             className="h-2rem img"
           ></img>
         </Button>
       </div>
+      
     </div>
   );
 }
 
-export default Fruits;
+export default Winter;

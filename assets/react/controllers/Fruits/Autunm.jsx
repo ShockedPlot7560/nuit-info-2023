@@ -1,37 +1,30 @@
 import React, { useState, useRef } from "react";
 import { Button } from "primereact/button";
 import { Toast } from "primereact/toast";
-import Summer from "./Summer"
 import "../../../styles/Fruits.css";
+import Winter from "./Winter";
 
-function Fruits(props) {
+function Autunm(props) {
   const toastRef = useRef();
-  const [season, setSeason] = useState("spring.svg");
-  const [pSpring] = useState([
-    "eggplant",
-    "pear",
-    "artichoke",
-    "tomato",
-    "carrot",
-    "potato",
-  ]);
-  const [rSpring] = useState(["pear", "carrot", "potato"]);
+  const [season, setSeason] = useState("autumn.svg");
+  const [pAutunm] = useState(["pumpkin", "pear", "onion", "apple", "potato"]);
+  const [rAutunm] = useState(["apple", "onion", "pumpkin"]);
   const [disabledButtons, setDisabledButtons] = useState([]);
   const [nbButtons, setnbButtons] = useState(0);
   const [nbRightAns, setnbRightAns] = useState(0);
   const [isRoundFinished, setIsRoundFinished] = useState(false);
 
   const onButtonClick = (fruitOrVegetable) => {
-    if (rSpring.includes(fruitOrVegetable)) {
+    if (rAutunm.includes(fruitOrVegetable)) {
       toastRef.current.show({
         severity: "success",
         summary: "Valid",
         detail: `Bravo, c'est bien un aliment de saison`,
       });
       const right = nbRightAns;
-      setnbRightAns(right + 1)
+      setnbRightAns(right + 1);
       if (nbRightAns === 2) {
-        setIsRoundFinished(true)
+        setIsRoundFinished(true);
       }
     } else {
       toastRef.current.show({
@@ -43,8 +36,8 @@ function Fruits(props) {
     setDisabledButtons((prevButtons) => [...prevButtons, fruitOrVegetable]);
     const button = nbButtons;
     setnbButtons(button + 1);
-    if (nbButtons === 5) {
-      setIsRoundFinished(true)
+    if (nbButtons === 4) {
+      setIsRoundFinished(true);
     }
   };
 
@@ -53,7 +46,7 @@ function Fruits(props) {
   };
 
   if (isRoundFinished) {
-    return <Summer />;
+    return <Winter />;
   }
 
   return (
@@ -69,14 +62,14 @@ function Fruits(props) {
 
       <div className="flex mt-4">
         <Button
-          label="Aubergine"
+          label="Citrouille"
           className="mr-2"
-          onClick={() => onButtonClick("eggplant")}
-          disabled={isButtonDisabled("eggplant")}
+          onClick={() => onButtonClick("pumpkin")}
+          disabled={isButtonDisabled("pumpkin")}
         >
           <img
-            alt="Aubergine"
-            src="/img/vegetables/eggplant.svg"
+            alt="Citrouille"
+            src="/img/vegetables/pumpkin.svg"
             className="h-2rem img"
           ></img>
         </Button>
@@ -93,38 +86,26 @@ function Fruits(props) {
           ></img>
         </Button>
         <Button
-          label="Artichaut"
+          label="Onion"
           className="mr-2"
-          onClick={() => onButtonClick("artichoke")}
-          disabled={isButtonDisabled("artichoke")}
+          onClick={() => onButtonClick("onion")}
+          disabled={isButtonDisabled("onion")}
         >
           <img
-            alt="Artichaut"
-            src="/img/vegetables/artichoke.svg"
+            alt="Onion"
+            src="/img/vegetables/onion.svg"
             className="h-2rem img"
           ></img>
         </Button>
         <Button
-          label="Tomate"
+          label="Pomme"
           className="mr-2"
-          onClick={() => onButtonClick("tomato")}
-          disabled={isButtonDisabled("tomato")}
+          onClick={() => onButtonClick("apple")}
+          disabled={isButtonDisabled("apple")}
         >
           <img
-            alt="Tomate"
-            src="/img/vegetables/tomato.svg"
-            className="h-2rem img"
-          ></img>
-        </Button>
-        <Button
-          label="Carotte"
-          className="mr-2"
-          onClick={() => onButtonClick("carrot")}
-          disabled={isButtonDisabled("carrot")}
-        >
-          <img
-            alt="Carotte"
-            src="/img/vegetables/carrot.svg"
+            alt="Apple"
+            src="/img/fruits/apple.svg"
             className="h-2rem img"
           ></img>
         </Button>
@@ -145,4 +126,4 @@ function Fruits(props) {
   );
 }
 
-export default Fruits;
+export default Autunm;

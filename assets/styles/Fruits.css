@@ -3,29 +3,7 @@
     min-height: 800px;
 }
 
-.red-square {
-  position: absolute;
-  left: 31%;
-  bottom: 16%;
-  width: 221px;
-  height: 62px;
-  background-color: red;
-  }
-
-  .green-square {
-    position: absolute;
-    left: 46%;
-    bottom: 22%;
-    width: 165px;
-    height: 66px;
-    background-color: green;
-  }
-
-  .blue-square {
-    position: absolute;
-    left: 30%;
-    bottom: 38%;
-    width: 165px;
-    height: 50px;
-    background-color: blue;
-  }
+.img {
+  min-width: 100px;
+  min-height: 100px;
+}
