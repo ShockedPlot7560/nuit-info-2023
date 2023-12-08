@@ -11,7 +11,7 @@ body {
 
 /* Rooms background */
 .bg-garage {
-    background-image: url('/assets/img/rooms/spectrum-gradient.svg');
+    background-image: url('/public/img/rooms/spectrum-gradient.svg');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
