@@ -1,56 +1,116 @@
 name: "Allemand"
 
+
+home:
+    welcome: "Bienvenue !"
+    subtitle: "Découvrez la vérité à propos du réchauffement climatique en commençant votre aventure au sein d'un escape game ludique et éducatif."
+    start: "Commencer"
+
 narration:
-    enter_continue: "Drücken Sie Eingang, um fortzufahren"
+    enter_continue: "Appuyez sur Entrée pour continuer"
 
 entrypoint:
     narration:
-        1: "Willkommen bei der Erde"
-        2: "Ich bin dein persönlicher Assistent, lass mich dich führen ..."
-        3: "Häufig gelöst und Sie werden bereit sein, unabhängig und verantwortungsbewusst zu leben!"
+        1: "Bienvenue sur Terre"
+        2: "Je suis ton assistant personnel, laisse moi te guider ..."
+        3: "Résous les défis et tu seras prêt à vivre de manière autonome et responsable !"
 
 factory:
     narration:
-        1: "Wir haben ein Treibhausgasemissionsproblem"
-        2: "Helfen Sie uns Objekte mit den größten CO2 -Emissionen"
-        3: "Am Ende der Schlacht können wir gemeinsam anfangen, Lösungen zu finden"
-    instructions: "Klicken Sie auf das Objekt, das während seines Fertigungszyklus den größten Kohlenstoff abgibt"
+        1: "Nous avons un problème d'émission de gaz à effet de serre"
+        2: "Aide nous à détecter les objets avec les plus grandes émissions de CO2"
+        3: "A la fin de la bataille, nous pourrons commencer à trouver des solutions ensemble"
+    instructions: "Clique sur l'objet qui émet le plus de carbone durant son cycle de fabrication"
 
 user_creation:
     narration:
-        1: "Ich denke, Sie sind bereit, lassen Sie mich Ihnen eine Identität geben ..."
+        1: "Je pense que tu es prêt, laisse moi te fournir une identité ..."
 
 market:
     narration:
-        1: "Um Sie zu Ihrer nächsten Mahlzeit zu machen, die auf Pflanzen basieren, benötigen Sie Obst und Gemüse"
-        2: "Wir haben viele konsumierbare Produkte auf der Erde"
-        3: "Helfen Sie Händlern, saisonale Produkte zu finden und nachhaltig zu essen"
-    instructions: "Klicken Sie auf saisonale Produkte, um sie zu Ihrem Korb hinzuzufügen"
+        1: "Pour te faire ton prochain repas à base de végétaux, tu as besoin de fruits et légumes"
+        2: "Nous avons de nombreux produits consommables sur terre"
+        3: "Aide toi des commercants pour trouver les produits de saison et manger durablement"
+    instructions: "Clique sur les produits de saison pour les ajouter à ton panier"
     dealers:
-        automn: "Hallo xxxx, was würden Sie Ihnen im Oktober gefallen?"
-        winter: "Guten Abend xxxx, es ist heute kalt, haben die Winterferien gut gelaufen?"
-        spring: "Ich habe keine Schokolade für Ostern, aber ich habe gute xxxx -Obst und Gemüse"
-        summer: "Xxxx, es ist heute heiß, oder?"
+        automn: "Salut, que te ferait il plaisir en ce mois d'octobre ?"
+        winter: "Bonsoir, il fait froid aujourd'hui, les vacances d'hiver se sont bien passés ?"
+        spring: "Je n'ai pas de chocolat pour pâques mais j'ai de bons fruits et légumes"
+        summer: "Il fait chaud aujourd'hui non ?"
+    toast:
+        valid: "Valide"
+        success: "Bravo, c'est bien un aliment de saison"
+        invalid: "Invalide"
+        error: "Non, ce n'est pas un alimenent de saison"
+    fruit:
+        citrouille: "Citrouille"
+        poire: "Poire"
+        onion: "Oignon"
+        pomme: "Pomme"
+        pdt: "Pomme de terre"
+        aubergine: "Aubergine"
+        artichaut: "Artichaut"
+        tomate: "Tomate"
+        carotte: "Carotte"
+        fraise: "Fraise"
+        poivron: "Poivron"
+        olive: "Olive"
+        pasteque: "Pastèque"
+        citron: "Citron"
+        radis: "Radis"
+
+
+industry:
+    names:
+        apples: "1 kg de pommes"
+        shoes: "Une paire de chaussures"
+        tennis_racket: "Une raquette de tennis"
+        jean: "Un jean en coton"
+        ebook_reader: "Une liseuse rétroéclairée"
+        garden_furniture: "Un salon de jardin"
+        fridge: "Un frigo"
+        tv: "Une télé 4K"
+    goods:
+        jean: "Lorsque les textiles sont synthétiques, c’est l’extraction de sa matière première (le pétrole) qui est de loin la plus contributrice du poids CO2. Lorsqu’il s’agit de matières naturelles (laine, coton...) c’est leur production."
+        fridge: "Les appareils de froid étant la première source de consommation électrique domestique (hormis bien sûr quand on se chauffe à l’électrique), la phase d’utilisation pèse beaucoup plus lourd pour un réfrigérateur !"
+        tv: "C’est vraiment la phase de production des matières premières et de fabrication des composants qui pèse le plus sur la planète. Plus les composants sont complexes, plus ils exigent des métaux rares. Les fabricants sont en train d'épuiser ces minerais précieux à un rythme inégalé."
+    question: "Laquelle de ces deux propositions émet le plus de CO2 ?"
+    good_answer: "Bonne réponse !"
+    bad_answer: "Mauvaise réponse..."
+    modal:
+        title: "En savoir plus"
+        1: "Quantité de CO2 rejetée par la proposition la moins émettrice :"
+        2: "A propos de la seconde proposition :"
+    results:
+        1: "Récap'"
+        2: "Quantité de CO2 rejetée (en kg)"
+    continue: "Continuer"
 
 transport:
     narration:
-        1: "Haben Sie Ihren Urlaub gut gelaufen? Gehen wir nach Hause ..."
-        2: "Ich habe Sie 3 Reisen ausgewählt, die optimalste auswählen"
-    instructions: "Wählen Sie die Reise aus, die den geringsten Kohlenstoff durch kumulative Passagiere ausstrahlt"
+        1: "Tes vacances se sont bien passées? rentrons chez nous ..."
+        2: "Je t'ai sélectionné 3 trajets, choisis le plus optimal"
+    instructions: "Sélectionne le trajet qui émettra le moins de carbone par passagers en cumulé"
 
 
 house:
     narration:
-        1: "Zu Hause erhalten Sie Ihre erste Stromrechnung."
-        2: "Nein, nein, es ist kein Fehler, Sie müssen Ihren Verbrauch reduzieren ..."
-        3: "Ihr Zuhause Ihr Haus auf der Suche nach Energieverbreitung von Geräten"
-    instructions: "Navigieren Sie durch Teile und klicken Sie auf Energieverbrennungsobjekte, um sie zu vermeiden."
+        1: "De retour chez toi, tu reçois ta première facture d'électricité."
+        2: "Non, non, ce n'est pas une erreur, il va falloir réduire ta consommation..."
+        3: "Parcours ta maison à la recherche des appareils énergivores"
+    instructions: "Navigue au travers des pièces et clique sur les objets énergivores à éviter."
 
 end:
     narrations:
-        1: "Sie sind bereit, unabhängig zu leben, unsere Wege trennen sich hier ..."
+        1: "Tu es prêt à vivre en autonomie, nos chemins se séparent ici ..."
 
 player:
     pseudo: "Pseudo"
-    next: "Folgen"
-    select_avatar: "Wählen Sie Ihren Avatar"
+    next: "Suivant"
+    select_avatar: "Choisis ton avatar"
+
+toast:
+    good_answer: "Bonne réponse !"
+    bad_answer: "Mauvaise réponse..."
+    good_more: "Bravo, c'est bien un aliment de saison"
+    bad_more: "Non, ce n'est pas un aliment de saison"
