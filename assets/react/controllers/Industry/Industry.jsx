@@ -3,6 +3,7 @@ import React, {useEffect, useState} from 'react';
 import arrayShuffle from 'array-shuffle';
 import {Button} from "primereact/button";
 import {Dialog} from "primereact/dialog";
+import i18n from '../../../utils/i18n';
 
 const data = {
     apples: {
@@ -19,7 +20,7 @@ const data = {
     },
     jean: {
         value: 25,
-        text: "Lorsque les textiles sont synthétiques, c’est l’extraction de sa matière première (le pétrole) qui est de loin la plus contributrice du poids CO2. Lorsqu’il s’agit de matières naturelles (laine, coton...) c’est leur production."
+        text: i18n.t("industry.goods.jean")
     },
     ebook_reader: {
         value: 44,
@@ -31,11 +32,11 @@ const data = {
     },
     fridge: {
         value: 343,
-        text: "Les appareils de froid étant la première source de consommation électrique domestique (hormis bien sûr quand on se chauffe à l’électrique), la phase d’utilisation pèse beaucoup plus lourd pour un réfrigérateur !"
+        text: i18n.t("industry.goods.fridge")
     },
     tv: {
         value: 374,
-        text: "C’est vraiment la phase de production des matières premières et de fabrication des composants qui pèse le plus sur la planète. Plus les composants sont complexes, plus ils exigent des métaux rares. Les fabricants sont en train d'épuiser ces minerais précieux à un rythme inégalé."
+        text: i18n.t("industry.goods.tv")
     },
 }
 
@@ -107,26 +108,26 @@ export default function (props) {
     return (
         !isGameEnded ?
             <div className="home-container bg-home gap-5">
-                <span id="industry-question" className="text-4xl font-bold text-white">Laquelle de ces deux propositions émet le plus de CO2 ?</span>
+                <span id="industry-question" className="text-4xl font-bold text-white">{i18n.t("industry.question")}</span>
                 <div className="flex flex-row gap-5">
                     {
                         Object.keys(board).length > 0 && board[step][subStep].map((boardSubStep, index) => {
                             return (
-                                <Button key={index} label={boardSubStep} text raised onClick={() => updateBoard(boardSubStep)}/>
+                                <Button key={index} label={i18n.t(`industry.names.${boardSubStep}`)} text raised onClick={() => updateBoard(boardSubStep)}/>
                             )
                         })
                     }
                 </div>
 
-                <Dialog header="En savoir plus" visible={displayCorrection} style={{ width: '35vw' }} onHide={() => setDisplayCorrection(false)} draggable={false}>
+                <Dialog header={i18n.t("industry.modal.title")} visible={displayCorrection} style={{ width: '35vw' }} onHide={() => setDisplayCorrection(false)} draggable={false}>
                     <p className="m-0 text-center flex flex-col gap-8">
                         <div className="flex flex-col gap-2">
-                            <span className={isRight ? "font-bold text-green-500 text-lg" : "font-bold text-red-500 text-lg" }>{isRight ? "Bonne réponse !" : "Mauvaise réponse..."}</span>
-                            <span>{`Quantité de CO2 rejetée par la proposition la moins émettrice : ${valueCorrection} kg`}</span>
+                            <span className={isRight ? "font-bold text-green-500 text-lg" : "font-bold text-red-500 text-lg" }>{isRight ? i18n.t("industry.good_answer") : i18n.t("industry.bad_answer")}</span>
+                            <span>{`${i18n.t("industry.modal.1")} ${valueCorrection} kg`}</span>
                         </div>
                         { textCorrection !== "" &&
                             <div className="flex flex-col gap-2">
-                                <b>A propos de la seconde proposition :</b>
+                                <b>{i18n.t("industry.modal.1")}</b>
                                 {textCorrection}
                             </div>
                         }
