@@ -1,116 +1,116 @@
-name: "Malgache"
+name: "Malagasy"
 
 
 home:
-    welcome: "Bienvenue !"
-    subtitle: "Découvrez la vérité à propos du réchauffement climatique en commençant votre aventure au sein d'un escape game ludique et éducatif."
-    start: "Commencer"
+    welcome: "Tongasoa!"
+    subtitle: "Fantaro ny marina momba ny fiakaran'ny Warming Manomboka ny fitsangatsanganana amin'ny lalao fandosirana sy fanabeazana."
+    start: "Manomboka"
 
 narration:
-    enter_continue: "Appuyez sur Entrée pour continuer"
+    enter_continue: "Press ny fidirana hanohy"
 
 entrypoint:
     narration:
-        1: "Bienvenue sur Terre"
-        2: "Je suis ton assistant personnel, laisse moi te guider ..."
-        3: "Résous les défis et tu seras prêt à vivre de manière autonome et responsable !"
+        1: "Tongasoa eto an-tany"
+        2: "Mpanampy anao manokana aho, avelao aho hitarika anao ..."
+        3: "Voavaha matetika ary ho vonona hiaina tsy miankina sy tompon'andraikitra ianao!"
 
 factory:
     narration:
-        1: "Nous avons un problème d'émission de gaz à effet de serre"
-        2: "Aide nous à détecter les objets avec les plus grandes émissions de CO2"
-        3: "A la fin de la bataille, nous pourrons commencer à trouver des solutions ensemble"
-    instructions: "Clique sur l'objet qui émet le plus de carbone durant son cycle de fabrication"
+        1: "Manana olana entona entona maitso izahay"
+        2: "Ampio izahay ireo zavatra miaraka amin'ny famoahana CO2 lehibe indrindra"
+        3: "Amin'ny faran'ny ady dia afaka manomboka mahita vahaolana miaraka isika"
+    instructions: "Kitiho ny zavatra izay mamoaka ny karbonika indrindra mandritra ny tsingerin'ny famokarana azy"
 
 user_creation:
     narration:
-        1: "Je pense que tu es prêt, laisse moi te fournir une identité ..."
+        1: "Mino aho fa vonona ianao, avelao aho hanome anao ny maha-izy azy ..."
 
 market:
     narration:
-        1: "Pour te faire ton prochain repas à base de végétaux, tu as besoin de fruits et légumes"
-        2: "Nous avons de nombreux produits consommables sur terre"
-        3: "Aide toi des commercants pour trouver les produits de saison et manger durablement"
-    instructions: "Clique sur les produits de saison pour les ajouter à ton panier"
+        1: "Mba hahatonga anao ny sakafo manaraka anao mifototra amin'ny zavamaniry, mila voankazo sy legioma ianao"
+        2: "Manana vokatra marobe maro isika eto an-tany"
+        3: "Ampio ny mpivarotra mba hahitana vokatra ara-potoana ary mihinana maharitra"
+    instructions: "Kitiho ny vokatra vanin-taona manampy azy ireo amin'ny harona"
     dealers:
-        automn: "Salut, que te ferait il plaisir en ce mois d'octobre ?"
-        winter: "Bonsoir, il fait froid aujourd'hui, les vacances d'hiver se sont bien passés ?"
-        spring: "Je n'ai pas de chocolat pour pâques mais j'ai de bons fruits et légumes"
-        summer: "Il fait chaud aujourd'hui non ?"
+        automn: "Salama, inona no hankafizanao amin'ity volana oktobra ity?"
+        winter: "Mirary soa hariva, mangatsiaka izao ankehitriny, nandeha tsara ve ny fialantsasatry ny ririnina?"
+        spring: "Tsy manana sôkôla ho an'ny Paka aho fa manana voankazo sy legioma tsara aho"
+        summer: "Mafana izao anio izao?"
     toast:
-        valid: "Valide"
-        success: "Bravo, c'est bien un aliment de saison"
-        invalid: "Invalide"
-        error: "Non, ce n'est pas un alimenent de saison"
+        valid: "Manan-kery"
+        success: "Tsara izany, sakafo ara-potoana io"
+        invalid: "Tsy mety"
+        error: "Tsia, tsy sakafo ara-potoana io"
     fruit:
-        citrouille: "Citrouille"
-        poire: "Poire"
-        onion: "Oignon"
-        pomme: "Pomme"
-        pdt: "Pomme de terre"
-        aubergine: "Aubergine"
+        citrouille: "Pumpkin"
+        poire: "Poara"
+        onion: "Tongolo"
+        pomme: "paoma"
+        pdt: "Ovy"
+        aubergine: "Baranjely"
         artichaut: "Artichaut"
-        tomate: "Tomate"
-        carotte: "Carotte"
-        fraise: "Fraise"
-        poivron: "Poivron"
+        tomate: "Voatabia"
+        carotte: "Karaoty"
+        fraise: "frezy"
+        poivron: "Dipoavatra bell"
         olive: "Olive"
-        pasteque: "Pastèque"
-        citron: "Citron"
-        radis: "Radis"
+        pasteque: "Voajabo"
+        citron: "Voasary makirana"
+        radis: "Radish"
 
 
 industry:
     names:
-        apples: "1 kg de pommes"
-        shoes: "Une paire de chaussures"
-        tennis_racket: "Une raquette de tennis"
-        jean: "Un jean en coton"
-        ebook_reader: "Une liseuse rétroéclairée"
-        garden_furniture: "Un salon de jardin"
-        fridge: "Un frigo"
-        tv: "Une télé 4K"
+        apples: "1 kg ny paoma"
+        shoes: "Kiraro kiraro"
+        tennis_racket: "Rakotra tenisy"
+        jean: "Pataloha jeans"
+        ebook_reader: "Mpamaky backlit"
+        garden_furniture: "Fitaovana zaridaina"
+        fridge: "Vata fampangatsiahana"
+        tv: "A 4K TV"
     goods:
-        jean: "Lorsque les textiles sont synthétiques, c’est l’extraction de sa matière première (le pétrole) qui est de loin la plus contributrice du poids CO2. Lorsqu’il s’agit de matières naturelles (laine, coton...) c’est leur production."
-        fridge: "Les appareils de froid étant la première source de consommation électrique domestique (hormis bien sûr quand on se chauffe à l’électrique), la phase d’utilisation pèse beaucoup plus lourd pour un réfrigérateur !"
-        tv: "C’est vraiment la phase de production des matières premières et de fabrication des composants qui pèse le plus sur la planète. Plus les composants sont complexes, plus ils exigent des métaux rares. Les fabricants sont en train d'épuiser ces minerais précieux à un rythme inégalé."
-    question: "Laquelle de ces deux propositions émet le plus de CO2 ?"
-    good_answer: "Bonne réponse !"
-    bad_answer: "Mauvaise réponse..."
+        jean: "Rehefa sinthetes ny lamba dia ny fitrandrahana ny akora (menaka) izay tsy dia ny lanjan'ny CO2. Raha ny fitaovana voajanahary (volon'ondry, landihazo ...) dia ny famokarana azy ireo."
+        fridge: "Fitaovana mangatsiaka no loharano voalohany amin'ny fanjifana herinaratra an-trano (afa-tsy ny Mazava ho azy rehefa mafana ny herinaratra), ny dingana fampiasana dia mandanja be dia be ho an'ny vata fampangatsiahana!"
+        tv: "Izy io dia tena dingana famokarana akora sy famokarana ireo singa izay miondrika indrindra amin'ny planeta. Arakaraka ny maha-saro-pady ny singa, arakaraka ny fomban'izy ireo ny metaly tsy fahita firy. Ny mpanamboatra dia eo am-panaovana reraka ireo mineraly sarobidy ireo amin'ny hafainganam-pandeha tsy mitovy."
+    question: "Iza amin'ireo soso-kevitra roa ireo no mamoaka ny CO2 indrindra?"
+    good_answer: "Valiny marina!"
+    bad_answer: "Valiny diso..."
     modal:
-        title: "En savoir plus"
-        1: "Quantité de CO2 rejetée par la proposition la moins émettrice :"
-        2: "A propos de la seconde proposition :"
+        title: "Hamantatra bebe kokoa"
+        1: "Ny habetsaky ny CO2 nolavina tamin'ny volavolan-kevitra faran'izay kely indrindra:"
+        2: "Momba ny tolo-kevitra faharoa:"
     results:
-        1: "Récap'"
-        2: "Quantité de CO2 rejetée (en kg)"
-    continue: "Continuer"
+        1: "Recap '"
+        2: "Ny habetsaky ny CO2 nolavina (ao amin'ny kg)"
+    continue: "FOANA"
 
 transport:
     narration:
-        1: "Tes vacances se sont bien passées? rentrons chez nous ..."
-        2: "Je t'ai sélectionné 3 trajets, choisis le plus optimal"
-    instructions: "Sélectionne le trajet qui émettra le moins de carbone par passagers en cumulé"
+        1: "Efa mandeha tsara ve ny fialan-tsasatrao? Andao hody ..."
+        2: "Nisafidy anao 3 dia ny dia, safidio ny tsara indrindra"
+    instructions: "Safidio ny dia izay hamela ny karbonika kely indrindra amin'ny alàlan'ny mpandeha cumulative"
 
 
 house:
     narration:
-        1: "De retour chez toi, tu reçois ta première facture d'électricité."
-        2: "Non, non, ce n'est pas une erreur, il va falloir réduire ta consommation..."
-        3: "Parcours ta maison à la recherche des appareils énergivores"
-    instructions: "Navigue au travers des pièces et clique sur les objets énergivores à éviter."
+        1: "Miverina any an-trano, ianao dia mandray ny volavolan-jiro voalohany."
+        2: "Tsia, tsia, tsy hadisoana izany, tsy maintsy hampihena ny fanjifanao ianao ..."
+        3: "Ny tranonao ny tranonao mitady fitaovana-fitaovana"
+    instructions: "Mandehana amin'ny alàlan'ny ampahany ary tsindrio ny angovo-angovo mba hialana."
 
 end:
     narrations:
-        1: "Tu es prêt à vivre en autonomie, nos chemins se séparent ici ..."
+        1: "Vonona ny hiaina mahaleo tena ianao, ny lalantsika misaraka eto ..."
 
 player:
-    pseudo: "Pseudo"
-    next: "Suivant"
-    select_avatar: "Choisis ton avatar"
+    pseudo: "sandoka"
+    next: "FANARAHANA"
+    select_avatar: "Fidio ny avatar anao"
 
 toast:
-    good_answer: "Bonne réponse !"
-    bad_answer: "Mauvaise réponse..."
-    good_more: "Bravo, c'est bien un aliment de saison"
-    bad_more: "Non, ce n'est pas un aliment de saison"
+    good_answer: "Valiny marina!"
+    bad_answer: "Valiny diso..."
+    good_more: "Tsara izany, sakafo ara-potoana io"
+    bad_more: "Tsia, tsy sakafo ara-potoana io"
