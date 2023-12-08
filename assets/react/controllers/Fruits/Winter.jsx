@@ -2,6 +2,7 @@ import React, { useState, useRef } from "react";
 import { Button } from "primereact/button";
 import { Toast } from "primereact/toast";
 import "../../../styles/Fruits.css";
+import i18n from "../../../utils/i18n";
 
 function Winter(props) {
   const toastRef = useRef();
@@ -24,8 +25,8 @@ function Winter(props) {
     if (rSpring.includes(fruitOrVegetable)) {
       toastRef.current.show({
         severity: "success",
-        summary: "Valid",
-        detail: `Bravo, c'est bien un aliment de saison`,
+        summary: i18n.t("toast.good_answer"),
+        detail: i18n.t("toast.good_more"),
       });
       const right = nbRightAns;
       setnbRightAns(right + 1);
@@ -35,8 +36,8 @@ function Winter(props) {
     } else {
       toastRef.current.show({
         severity: "error",
-        summary: "Invalid",
-        detail: `Non, ce n'est pas un alimenent de saison`,
+        summary: i18n.t("toast.bad_answer"),
+        detail: i18n.t("toast.bad_more"),
       });
     }
     setDisabledButtons((prevButtons) => [...prevButtons, fruitOrVegetable]);
@@ -66,7 +67,7 @@ function Winter(props) {
       <div className="flex mt-4">
         <Button
           label="Pastèque"
-          className="mr-2"
+          className="mr-2 w-48"
           onClick={() => onButtonClick("watermelon")}
           disabled={isButtonDisabled("watermelon")}
         >
@@ -78,7 +79,7 @@ function Winter(props) {
         </Button>
         <Button
           label="Citron"
-          className="mr-2"
+          className="mr-2 w-48"
           onClick={() => onButtonClick("lemon")}
           disabled={isButtonDisabled("lemon")}
         >
@@ -90,7 +91,7 @@ function Winter(props) {
         </Button>
         <Button
           label="Radis"
-          className="mr-2"
+          className="mr-2 w-48"
           onClick={() => onButtonClick("radish")}
           disabled={isButtonDisabled("radish")}
         >
@@ -102,7 +103,7 @@ function Winter(props) {
         </Button>
         <Button
           label="Olive"
-          className="mr-2"
+          className="mr-2 w-48"
           onClick={() => onButtonClick("olive")}
           disabled={isButtonDisabled("olive")}
         >
@@ -114,7 +115,7 @@ function Winter(props) {
         </Button>
         <Button
           label="Poivron"
-          className="mr-2"
+          className="mr-2 w-48"
           onClick={() => onButtonClick("pepper")}
           disabled={isButtonDisabled("pepper")}
         >
@@ -126,7 +127,7 @@ function Winter(props) {
         </Button>
         <Button
           label="Onion"
-          className="mr-2"
+          className="mr-2 w-48"
           onClick={() => onButtonClick("onion")}
           disabled={isButtonDisabled("onion")}
         >

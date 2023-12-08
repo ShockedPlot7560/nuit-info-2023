@@ -3,6 +3,7 @@ import { Button } from "primereact/button";
 import { Toast } from "primereact/toast";
 import Summer from "./Summer"
 import "../../../styles/Fruits.css";
+import i18n from "../../../utils/i18n";
 
 function Fruits(props) {
   const toastRef = useRef();
@@ -25,8 +26,8 @@ function Fruits(props) {
     if (rSpring.includes(fruitOrVegetable)) {
       toastRef.current.show({
         severity: "success",
-        summary: "Valid",
-        detail: `Bravo, c'est bien un aliment de saison`,
+        summary: i18n.t("toast.good_answer"),
+        detail: i18n.t("toast.good_more"),
       });
       const right = nbRightAns;
       setnbRightAns(right + 1)
@@ -36,8 +37,8 @@ function Fruits(props) {
     } else {
       toastRef.current.show({
         severity: "error",
-        summary: "Invalid",
-        detail: `Non, ce n'est pas un alimenent de saison`,
+        summary: i18n.t("toast.bad_answer"),
+        detail: i18n.t("toast.bad_more"),
       });
     }
     setDisabledButtons((prevButtons) => [...prevButtons, fruitOrVegetable]);
@@ -70,7 +71,7 @@ function Fruits(props) {
       <div className="flex mt-4">
         <Button
           label="Aubergine"
-          className="mr-2"
+          className="mr-2 w-48"
           onClick={() => onButtonClick("eggplant")}
           disabled={isButtonDisabled("eggplant")}
         >
@@ -82,7 +83,7 @@ function Fruits(props) {
         </Button>
         <Button
           label="Poire"
-          className="mr-2"
+          className="mr-2 w-48"
           onClick={() => onButtonClick("pear")}
           disabled={isButtonDisabled("pear")}
         >
@@ -94,7 +95,7 @@ function Fruits(props) {
         </Button>
         <Button
           label="Artichaut"
-          className="mr-2"
+          className="mr-2 w-48"
           onClick={() => onButtonClick("artichoke")}
           disabled={isButtonDisabled("artichoke")}
         >
@@ -106,7 +107,7 @@ function Fruits(props) {
         </Button>
         <Button
           label="Tomate"
-          className="mr-2"
+          className="mr-2 w-48"
           onClick={() => onButtonClick("tomato")}
           disabled={isButtonDisabled("tomato")}
         >
@@ -118,7 +119,7 @@ function Fruits(props) {
         </Button>
         <Button
           label="Carotte"
-          className="mr-2"
+          className="mr-2 w-48"
           onClick={() => onButtonClick("carrot")}
           disabled={isButtonDisabled("carrot")}
         >
@@ -130,7 +131,7 @@ function Fruits(props) {
         </Button>
         <Button
           label="Pomme de terre"
-          className="mr-2"
+          className="mr-2 w-48"
           onClick={() => onButtonClick("potato")}
           disabled={isButtonDisabled("potato")}
         >

@@ -3,6 +3,7 @@ import { Button } from "primereact/button";
 import { Toast } from "primereact/toast";
 import "../../../styles/Fruits.css";
 import Winter from "./Winter";
+import i18n from "../../../utils/i18n";
 
 function Autunm(props) {
   const toastRef = useRef();
@@ -18,8 +19,8 @@ function Autunm(props) {
     if (rAutunm.includes(fruitOrVegetable)) {
       toastRef.current.show({
         severity: "success",
-        summary: "Valid",
-        detail: `Bravo, c'est bien un aliment de saison`,
+        summary: i18n.t("toast.good_answer"),
+        detail: i18n.t("toast.good_more"),
       });
       const right = nbRightAns;
       setnbRightAns(right + 1);
@@ -29,8 +30,8 @@ function Autunm(props) {
     } else {
       toastRef.current.show({
         severity: "error",
-        summary: "Invalid",
-        detail: `Non, ce n'est pas un alimenent de saison`,
+        summary: i18n.t("toast.bad_answer"),
+        detail: i18n.t("toast.bad_more"),
       });
     }
     setDisabledButtons((prevButtons) => [...prevButtons, fruitOrVegetable]);
@@ -63,7 +64,7 @@ function Autunm(props) {
       <div className="flex mt-4">
         <Button
           label="Citrouille"
-          className="mr-2"
+          className="mr-2 w-48"
           onClick={() => onButtonClick("pumpkin")}
           disabled={isButtonDisabled("pumpkin")}
         >
@@ -75,7 +76,7 @@ function Autunm(props) {
         </Button>
         <Button
           label="Poire"
-          className="mr-2"
+          className="mr-2 w-48"
           onClick={() => onButtonClick("pear")}
           disabled={isButtonDisabled("pear")}
         >
@@ -87,7 +88,7 @@ function Autunm(props) {
         </Button>
         <Button
           label="Onion"
-          className="mr-2"
+          className="mr-2 w-48"
           onClick={() => onButtonClick("onion")}
           disabled={isButtonDisabled("onion")}
         >
@@ -99,7 +100,7 @@ function Autunm(props) {
         </Button>
         <Button
           label="Pomme"
-          className="mr-2"
+          className="mr-2 w-48"
           onClick={() => onButtonClick("apple")}
           disabled={isButtonDisabled("apple")}
         >
@@ -111,7 +112,7 @@ function Autunm(props) {
         </Button>
         <Button
           label="Pomme de terre"
-          className="mr-2"
+          className="mr-2 w-48"
           onClick={() => onButtonClick("potato")}
           disabled={isButtonDisabled("potato")}
         >
