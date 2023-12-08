@@ -8,6 +8,7 @@ import itYaml from 'js-yaml-loader!./../../translations/messages.it.yaml';
 import srYaml from 'js-yaml-loader!./../../translations/messages.sr.yaml';
 import esYaml from 'js-yaml-loader!./../../translations/messages.es.yaml';
 import mgYaml from 'js-yaml-loader!./../../translations/messages.mg.yaml';
+import deYaml from 'js-yaml-loader!./../../translations/messages.de.yaml';
 
 i18n
   .use(initReactI18next)
@@ -30,6 +31,9 @@ i18n
       },
       mg: {
         translation: mgYaml,
+      },
+      de: {
+        translation: deYaml,
       },
     },
     lng: Cookies.get("lang") || (window && window.locale) || 'fr',
