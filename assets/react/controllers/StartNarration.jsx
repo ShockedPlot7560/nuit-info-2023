@@ -1,6 +1,8 @@
 import { TypeAnimation } from 'react-type-animation';
 import React, {useState} from 'react';
 
+import i18n from '../../utils/i18n';
+
 function printContinue(bool) {
     if (bool) {
         document.getElementById("continue").style.display = "block";
@@ -9,9 +11,10 @@ function printContinue(bool) {
     }
 }
 
-async function finishTyping() {
+async function finishTyping(i) {
     printContinue(true);
     await waitEnter();
+    document.location.hash = "#" + i;
     printContinue(false);
 }
 
@@ -30,18 +33,30 @@ async function waitEnter() {
     });
 }
 
+function getActualSequenceIndex() {
+    if(document.location.hash === "") {
+        return -1;
+    }
+    return parseInt(document.location.hash.substring(1));
+}
+
 export default function(props) {
     let sequence = [];
-    for (let i = 0; i < props.sequence.length; i++) {
+    for (let i = getActualSequenceIndex() + 1; i < props.sequence.length; i++) {
         sequence.push(props.sequence[i]);
         sequence.push(5);
-        sequence.push(finishTyping);
+        sequence.push(async () => {
+            return finishTyping(i)
+        });
     }
     sequence.push(5);
     sequence.push("");
     sequence.push(() => {
         // fade out the 'start narration' div
         document.getElementById("start-narration").style.opacity = "0";
+        setTimeout(() => {
+            document.getElementById("start-narration").style.display = "none";
+        }, 1000);
     })
     return (
         <div
@@ -60,7 +75,7 @@ export default function(props) {
 
             <p id={"continue"} style={{
                 display: "none"
-            }} className={"text-gray-600 animate-pulse"}>Appuyer sur entrée pour continuer</p>
+            }} className={"text-gray-200 animate-pulse"}>{i18n.t("narration.enter_continue")}</p>
         </div>
     );
 };

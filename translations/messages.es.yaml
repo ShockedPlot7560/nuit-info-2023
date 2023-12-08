@@ -1,0 +1,51 @@
+name: "Espagnol"
+
+narration:
+    enter_continue: "Entrada de prensa para continuar"
+
+entrypoint:
+    narration:
+        1: "Bienvenido a la tierra"
+        2: "Soy tu asistente personal, déjame guiarte ..."
+        3: "¡Con frecuencia resuelto y estará listo para vivir de forma independiente y responsable!"
+
+factory:
+    narration:
+        1: "Tenemos un problema de emisión de gases de efecto invernadero"
+        2: "Ayúdanos a los objetos con las mayores emisiones de CO2"
+        3: "Al final de la batalla, podemos comenzar a encontrar soluciones juntos"
+    instructions: "Haga clic en el objeto que emite más carbono durante su ciclo de fabricación"
+
+user_creation:
+    narration:
+        1: "Creo que estás listo, déjame proporcionarte una identidad ..."
+
+market:
+    narration:
+        1: "Para hacerle su próxima comida basada en plantas, necesita frutas y verduras"
+        2: "Tenemos muchos productos consumibles en la tierra"
+        3: "Ayudarlo a los comerciantes a encontrar productos de temporada y comer de manera sostenible"
+    instructions: "Haga clic en productos de temporada para agregarlos a su cesta"
+    dealers:
+        automn: "Hola xxxx, ¿qué le gustaría en octubre?"
+        winter: "Buenas noches xxxx, hace frío hoy, ¿se han ido las vacaciones de invierno?"
+        spring: "No tengo chocolate para la Pascua, pero tengo buenas frutas y verduras xxxx"
+        summer: "Xxxx, hace calor hoy, ¿verdad?"
+
+transport:
+    narration:
+        1: "¿Tus vacaciones han ido bien? Vamos a casa ..."
+        2: "Te seleccioné 3 viajes, elige los más óptimos"
+    instructions: "Seleccione el viaje que emitirá el menor carbono por los pasajeros acumulativos"
+
+
+house:
+    narration:
+        1: "De vuelta a casa, recibirá su primera factura de electricidad."
+        2: "No, no, no es un error, tendrá que reducir su consumo ..."
+        3: "Su hogar su casa en busca de dispositivos de consumo de energía"
+    instructions: "Navegue a través de piezas y haga clic en objetos de consumo de energía para evitar."
+
+end:
+    narrations:
+        1: "Estás listo para vivir de forma independiente, nuestros caminos se separan aquí ..."

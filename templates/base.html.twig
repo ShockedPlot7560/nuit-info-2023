@@ -14,6 +14,10 @@
         {% endblock %}
     </head>
     <body>
+        {% if room is defined %}
+            <div {{ react_component('Instruction', {instructions: room ~ '.instructions'}) }}></div>
+        {% endif %}
+        <div {{ react_component('ChooseLang') }}></div>
         {% block body %}{% endblock %}
     </body>
 </html>

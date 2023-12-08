@@ -1,0 +1,51 @@
+name: "Italien"
+
+narration:
+    enter_continue: "Premere l'ingresso per continuare"
+
+entrypoint:
+    narration:
+        1: "Benvenuti sulla Terra"
+        2: "Sono il tuo assistente personale, lascia che ti guidi ..."
+        3: "Risolto frequentemente e sarai pronto a vivere in modo indipendente e responsabile!"
+
+factory:
+    narration:
+        1: "Abbiamo un problema di emissione di gas serra"
+        2: "Aiutaci gli oggetti con le maggiori emissioni di CO2"
+        3: "Alla fine della battaglia, possiamo iniziare a trovare soluzioni insieme"
+    instructions: "Fai clic sull'oggetto che emette più carbonio durante il suo ciclo di produzione"
+
+user_creation:
+    narration:
+        1: "Penso che tu sia pronto, lascia che ti fornisca un'identità ..."
+
+market:
+    narration:
+        1: "Per farti il ​​tuo prossimo pasto in base alle piante, hai bisogno di frutta e verdura"
+        2: "Abbiamo molti prodotti di consumo sulla terra"
+        3: "Aiutati i trader a trovare prodotti stagionali e mangiare in modo sostenibile"
+    instructions: "Fai clic sui prodotti stagionali per aggiungerli al tuo cestino"
+    dealers:
+        automn: "Ciao xxxx, cosa ti piaceresti ad ottobre?"
+        winter: "Buonasera xxxx, fa freddo oggi, le vacanze invernali sono andate bene?"
+        spring: "Non ho cioccolato per Pasqua ma ho buoni frutti e verdure xxxx"
+        summer: "Xxxx, fa caldo oggi, giusto?"
+
+transport:
+    narration:
+        1: "La tua vacanza è andata bene? Andiamo a casa ..."
+        2: "Ti ho selezionato 3 viaggi, scegli il più ottimale"
+    instructions: "Seleziona il viaggio che emetterà il minimo carbonio dai passeggeri cumulativi"
+
+
+house:
+    narration:
+        1: "Torna a casa, ricevi la tua prima bolletta elettrica."
+        2: "No, no, non è un errore, dovrai ridurre il consumo ..."
+        3: "La tua casa è la tua casa in cerca di dispositivi consumanti energetici"
+    instructions: "Passare attraverso le parti e fare clic su Energy -Suming Objects per evitare."
+
+end:
+    narrations:
+        1: "Sei pronto a vivere in modo indipendente, i nostri percorsi si separano qui ..."
