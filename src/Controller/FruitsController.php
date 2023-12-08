@@ -13,6 +13,7 @@ class FruitsController extends AbstractController
     {
         return $this->render('fruits/index.html.twig', [
             'controller_name' => 'FruitsController',
+            'room' => 'market'
         ]);
     }
 }

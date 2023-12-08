@@ -49,3 +49,8 @@ house:
 end:
     narrations:
         1: "Tu es prêt à vivre en autonomie, nos chemins se séparent ici ..."
+
+player:
+    pseudo: "Pseudo"
+    next: "Suivant"
+    select_avatar: "Choisis ton avatar"
