@@ -58,6 +58,10 @@ industry:
         title: "En savoir plus"
         1: "Quantité de CO2 rejetée par la proposition la moins émettrice :"
         2: "A propos de la seconde proposition :"
+    results:
+        1: "Récap'"
+        2: "Quantité de CO2 rejetée (en kg)"
+    continue: "Continuer"
 
 transport:
     narration:

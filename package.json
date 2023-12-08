@@ -33,6 +33,7 @@
     },
     "dependencies": {
         "array-shuffle": "^3.0.0",
+        "chart.js": "^4.4.1",
         "flag-icons": "^7.0.3",
         "glob": "^10.3.10",
         "i18next": "^23.7.8",
@@ -43,8 +44,8 @@
         "primeicons": "^6.0.1",
         "primereact": "^10.2.1",
         "puppeteer": "^21.6.0",
-        "react-router-dom": "^6.20.1",
         "react-i18next": "^13.5.0",
+        "react-router-dom": "^6.20.1",
         "react-type-animation": "^3.2.0",
         "to-fast-properties": "^4.0.0"
     }
