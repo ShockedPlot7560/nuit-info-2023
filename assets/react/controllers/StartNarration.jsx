@@ -54,6 +54,9 @@ export default function(props) {
     sequence.push(() => {
         // fade out the 'start narration' div
         document.getElementById("start-narration").style.opacity = "0";
+        setTimeout(() => {
+            document.getElementById("start-narration").style.display = "none";
+        }, 1000);
     })
     return (
         <div

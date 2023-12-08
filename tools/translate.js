@@ -72,7 +72,7 @@ const fs = require('fs');
 const baseLangPath = 'translations/messages.fr.yaml';
 const baseLangContent = fs.readFileSync(baseLangPath, 'utf8');
 
-fs.readdirSync('translations').forEach(file => {
+fs.readdirSync('translations').forEach(async (file) => {
   if(file.includes('messages') && !file.includes("fr.yaml")) {
     // extract lang from messages.fr.yaml
     const lang = file.split('.')[1];
@@ -85,18 +85,17 @@ fs.readdirSync('translations').forEach(file => {
     const chainesExtraites = baseLangContent.match(/"([^"]*)"/g);
 
     let promises = []
-    chainesExtraites.forEach((chaine) => {
-        const chaineToTranslate = chaine.substring(1, chaine.length - 1);
-        promises.push(translate(source_lang, lang, chaineToTranslate).then((translatedText) => {
-          // replace text in file
-          contenuFichier = contenuFichier.replace(chaine, '"' + translatedText + '"');
-          console.log("Translation: ", translatedText);
-        }));
-    });
+    for (let i = 0; i < chainesExtraites.length; i++) {
+      const chaine = chainesExtraites[i];
+      const chaineToTranslate = chaine.substring(1, chaine.length - 1);
+      await translate(source_lang, lang, chaineToTranslate).then((translatedText) => {
+        // replace text in file
+        contenuFichier = contenuFichier.replace(chaine, '"' + translatedText + '"');
+        console.log("Translation: ", translatedText);
+      });
+    }
 
-    return Promise.all(promises).then(() => {
-      console.log(contenuFichier)
-      fs.writeFileSync("translations/messages." + lang + ".yaml", contenuFichier);
-    });
+    console.log(contenuFichier)
+    fs.writeFileSync("translations/messages." + lang + ".yaml", contenuFichier);
   }
 });
