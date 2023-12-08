@@ -32,10 +32,10 @@ market:
         3: "Aide toi des commercants pour trouver les produits de saison et manger durablement"
     instructions: "Clique sur les produits de saison pour les ajouter à ton panier"
     dealers:
-        automn: "Salut xxxx, que te ferait il plaisir en ce mois d'octobre ?"
-        winter: "Bonsoir xxxx, il fait froid aujourd'hui, les vacances d'hiver se sont bien passés ?"
-        spring: "Je n'ai pas de chocolat pour pâques mais j'ai de bons fruits et légumes xxxx"
-        summer: "xxxx, il fait chaud aujourd'hui non ?"
+        automn: "Salut, que te ferait il plaisir en ce mois d'octobre ?"
+        winter: "Bonsoir, il fait froid aujourd'hui, les vacances d'hiver se sont bien passés ?"
+        spring: "Je n'ai pas de chocolat pour pâques mais j'ai de bons fruits et légumes"
+        summer: "Il fait chaud aujourd'hui non ?"
 
 industry:
     names:

@@ -3,6 +3,7 @@ import { Button } from "primereact/button";
 import { Toast } from "primereact/toast";
 import Summer from "./Summer"
 import "../../../styles/Fruits.css";
+import i18n from '../../../utils/i18n';
 
 function Fruits(props) {
   const toastRef = useRef();
@@ -20,6 +21,12 @@ function Fruits(props) {
   const [nbButtons, setnbButtons] = useState(0);
   const [nbRightAns, setnbRightAns] = useState(0);
   const [isRoundFinished, setIsRoundFinished] = useState(false);
+
+  window.addEventListener(('keydown'), (e) => {
+    if (e.key === 'Enter' && document.getElementById("dialog")) {
+        document.getElementById("dialog").remove();
+    }
+  });
 
   const onButtonClick = (fruitOrVegetable) => {
     if (rSpring.includes(fruitOrVegetable)) {
@@ -58,6 +65,23 @@ function Fruits(props) {
 
   return (
     <div className="flex flex-col justify-center items-center h-screen w-screen">
+        <div style={{
+            position: "absolute",
+            top: "0",
+            left: "0",
+            right: "0",
+            bottom: "0",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            backgroundColor: "rgba(0,0,0,0.5)",
+            zIndex: "50"
+        }} id={"dialog"}>
+            <div className={"p-3"} style={{width: "50%", backgroundColor: "whitesmoke", textAlign: "center", border: "1px solid gray", borderRadius: "0.5rem"}}>
+                <p>{i18n.t('market.dealers.spring')}</p>
+                <p><small className={"animate-pulse"}>{i18n.t('narration.enter_continue')}</small></p>
+            </div>
+        </div>
       <div className="h-fit w-fit">
         <Toast ref={toastRef} />
         <img
