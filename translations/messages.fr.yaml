@@ -1,5 +1,10 @@
 name: "Français"
 
+home:
+    welcome: "Bienvenue !"
+    subtitle: "Découvrez la vérité à propos du réchauffement climatique en commençant votre aventure au sein d'un escape game ludique et éducatif."
+    start: "Commencer"
+
 narration:
     enter_continue: "Appuyez sur Entrée pour continuer"
 
@@ -31,6 +36,32 @@ market:
         winter: "Bonsoir xxxx, il fait froid aujourd'hui, les vacances d'hiver se sont bien passés ?"
         spring: "Je n'ai pas de chocolat pour pâques mais j'ai de bons fruits et légumes xxxx"
         summer: "xxxx, il fait chaud aujourd'hui non ?"
+
+industry:
+    names:
+        apples: "1 kg de pommes"
+        shoes: "Une paire de chaussures"
+        tennis_racket: "Une raquette de tennis"
+        jean: "Un jean en coton"
+        ebook_reader: "Une liseuse rétroéclairée"
+        garden_furniture: "Un salon de jardin"
+        fridge: "Un frigo"
+        tv: "Une télé 4K"
+    goods:
+        jean: "Lorsque les textiles sont synthétiques, c’est l’extraction de sa matière première (le pétrole) qui est de loin la plus contributrice du poids CO2. Lorsqu’il s’agit de matières naturelles (laine, coton...) c’est leur production."
+        fridge: "Les appareils de froid étant la première source de consommation électrique domestique (hormis bien sûr quand on se chauffe à l’électrique), la phase d’utilisation pèse beaucoup plus lourd pour un réfrigérateur !"
+        tv: "C’est vraiment la phase de production des matières premières et de fabrication des composants qui pèse le plus sur la planète. Plus les composants sont complexes, plus ils exigent des métaux rares. Les fabricants sont en train d'épuiser ces minerais précieux à un rythme inégalé."
+    question: "Laquelle de ces deux propositions émet le plus de CO2 ?"
+    good_answer: "Bonne réponse !"
+    bad_answer: "Mauvaise réponse..."
+    modal:
+        title: "En savoir plus"
+        1: "Quantité de CO2 rejetée par la proposition la moins émettrice :"
+        2: "A propos de la seconde proposition :"
+    results:
+        1: "Récap'"
+        2: "Quantité de CO2 rejetée (en kg)"
+    continue: "Continuer"
 
 transport:
     narration:

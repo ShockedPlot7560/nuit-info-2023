@@ -1,37 +1,36 @@
 import React, { useState, useRef } from "react";
 import { Button } from "primereact/button";
 import { Toast } from "primereact/toast";
-import Summer from "./Summer"
+import Autunm from "./Autunm";
 import "../../../styles/Fruits.css";
 
-function Fruits(props) {
+function Summer(props) {
   const toastRef = useRef();
-  const [season, setSeason] = useState("spring.svg");
-  const [pSpring] = useState([
-    "eggplant",
-    "pear",
-    "artichoke",
+  const [season, setSeason] = useState("summer.svg");
+  const [pSummer] = useState([
+    "pumpkin",
+    "strawberry",
     "tomato",
-    "carrot",
-    "potato",
+    "pepper",
+    "olive",
   ]);
-  const [rSpring] = useState(["pear", "carrot", "potato"]);
+  const [rSummer] = useState(["tomato", "strawberry", "pepper"]);
   const [disabledButtons, setDisabledButtons] = useState([]);
   const [nbButtons, setnbButtons] = useState(0);
   const [nbRightAns, setnbRightAns] = useState(0);
   const [isRoundFinished, setIsRoundFinished] = useState(false);
 
   const onButtonClick = (fruitOrVegetable) => {
-    if (rSpring.includes(fruitOrVegetable)) {
+    if (rSummer.includes(fruitOrVegetable)) {
       toastRef.current.show({
         severity: "success",
         summary: "Valid",
         detail: `Bravo, c'est bien un aliment de saison`,
       });
       const right = nbRightAns;
-      setnbRightAns(right + 1)
+      setnbRightAns(right + 1);
       if (nbRightAns === 2) {
-        setIsRoundFinished(true)
+        setIsRoundFinished(true);
       }
     } else {
       toastRef.current.show({
@@ -43,8 +42,8 @@ function Fruits(props) {
     setDisabledButtons((prevButtons) => [...prevButtons, fruitOrVegetable]);
     const button = nbButtons;
     setnbButtons(button + 1);
-    if (nbButtons === 5) {
-      setIsRoundFinished(true)
+    if (nbButtons === 4) {
+      isRoundFinished = true;
     }
   };
 
@@ -53,7 +52,7 @@ function Fruits(props) {
   };
 
   if (isRoundFinished) {
-    return <Summer />;
+    return <Autunm />;
   }
 
   return (
@@ -69,38 +68,26 @@ function Fruits(props) {
 
       <div className="flex mt-4">
         <Button
-          label="Aubergine"
+          label="Citrouille"
           className="mr-2"
-          onClick={() => onButtonClick("eggplant")}
-          disabled={isButtonDisabled("eggplant")}
+          onClick={() => onButtonClick("pumpkin")}
+          disabled={isButtonDisabled("pumpkin")}
         >
           <img
-            alt="Aubergine"
-            src="/img/vegetables/eggplant.svg"
+            alt="Citrouille"
+            src="/img/vegetables/pumpkin.svg"
             className="h-2rem img"
           ></img>
         </Button>
         <Button
-          label="Poire"
+          label="Fraise"
           className="mr-2"
-          onClick={() => onButtonClick("pear")}
-          disabled={isButtonDisabled("pear")}
+          onClick={() => onButtonClick("strawberry")}
+          disabled={isButtonDisabled("strawberry")}
         >
           <img
-            alt="Poire"
-            src="/img/fruits/pear.svg"
-            className="h-2rem img"
-          ></img>
-        </Button>
-        <Button
-          label="Artichaut"
-          className="mr-2"
-          onClick={() => onButtonClick("artichoke")}
-          disabled={isButtonDisabled("artichoke")}
-        >
-          <img
-            alt="Artichaut"
-            src="/img/vegetables/artichoke.svg"
+            alt="Fraise"
+            src="/img/fruits/strawberry.svg"
             className="h-2rem img"
           ></img>
         </Button>
@@ -117,26 +104,26 @@ function Fruits(props) {
           ></img>
         </Button>
         <Button
-          label="Carotte"
+          label="Poivron"
           className="mr-2"
-          onClick={() => onButtonClick("carrot")}
-          disabled={isButtonDisabled("carrot")}
+          onClick={() => onButtonClick("pepper")}
+          disabled={isButtonDisabled("pepper")}
         >
           <img
-            alt="Carotte"
-            src="/img/vegetables/carrot.svg"
+            alt="Poivron"
+            src="/img/vegetables/pepper.svg"
             className="h-2rem img"
           ></img>
         </Button>
         <Button
-          label="Pomme de terre"
+          label="Olive"
           className="mr-2"
-          onClick={() => onButtonClick("potato")}
-          disabled={isButtonDisabled("potato")}
+          onClick={() => onButtonClick("olive")}
+          disabled={isButtonDisabled("olive")}
         >
           <img
             alt="Pomme de terre"
-            src="/img/vegetables/potato.svg"
+            src="/img/vegetables/olive.svg"
             className="h-2rem img"
           ></img>
         </Button>
@@ -145,4 +132,4 @@ function Fruits(props) {
   );
 }
 
-export default Fruits;
+export default Summer;
