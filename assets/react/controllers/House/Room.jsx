@@ -5,9 +5,12 @@ import { Button } from 'primereact/button';
 const navigationButtonStyle = `bg-white opacity-50 hover:opacity-80 transition-opacity duration-500`
 
 export default function (props) {
+
+    const [modalIsOpen, setModalIsOpen] = React.useState(false);
+
     return (
         <div className={`
-            h-screen grid grid-cols-3
+            h-screen w-screen grid grid-cols-3
         `}>
             <div className={'flex flex-col justify-center items-start'}>
                 <PrimeReactProvider>
@@ -61,6 +64,43 @@ export default function (props) {
                     }
                 </PrimeReactProvider>
             </div>
+
+            {/* Objects */}
+            <div className={'absolute'}>
+                { props.objectList.map((object, index) => {
+                    return (
+                        <div
+                            key={index}
+                            className={'absolute w-5 h-5 bg-white cursor-pointer z-0'}
+                            style={{
+                                top: `${object.positionY}px`,
+                                left: `${object.positionX}px`,
+                            }}
+                            onClick={() => setModalIsOpen(true)}
+                        >
+
+                        </div>
+                    )
+                })}
+            </div>
+
+            {/* Modal - 1. Add a black layer ; 2. Add the modal div */}
+            { modalIsOpen === true &&
+                <>
+                    <div className={'absolute h-screen w-screen flex justify-center items-center bg-black opacity-50'}/>
+                    <div className={'absolute h-screen w-screen flex justify-center items-center'}>
+                        <div className={'h-2/3 w-1/2 bg-white shadow-xl rounded-xl flex justify-center items-end'}>
+                            <PrimeReactProvider>
+                                <Button
+                                    className={'mb-5'}
+                                    label="Je comprends"
+                                    onClick={() => setModalIsOpen(false)}
+                                />
+                            </PrimeReactProvider>
+                        </div>
+                    </div>
+                </>
+            }
         </div>
     )
 }

@@ -21,19 +21,19 @@ class RoomFactory
     private static function setup() : void{
         self::register(new Room(
             Ids::GARAGE, [
-                Direction::EAST->value => Ids::OUTSIDE,
+                Direction::EAST->value => Ids::OUTDOOR,
                 Direction::SOUTH->value => Ids::KITCHEN
             ]
         ));
         self::register(new Room(
-            Ids::OUTSIDE, [
+            Ids::OUTDOOR, [
                 Direction::WEST->value => Ids::GARAGE,
                 Direction::SOUTH->value => Ids::LIVINGROOM
             ]
         ));
         self::register(new Room(
             Ids::LIVINGROOM, [
-                Direction::NORTH->value => Ids::OUTSIDE,
+                Direction::NORTH->value => Ids::OUTDOOR,
                 Direction::WEST->value => Ids::KITCHEN,
                 Direction::SOUTH->value => Ids::BEDROOM
             ]

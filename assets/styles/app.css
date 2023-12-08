@@ -1,17 +1,51 @@
 @import 'primeicons/primeicons.css';
 @import 'primereact/resources/themes/lara-light-cyan/theme.css';
 
-@tailwind base;
-@tailwind components;
 @tailwind utilities;
 
 body {
+    margin: 0;
     background-color: lightgray;
 }
 
 /* Rooms background */
 .bg-garage {
-    background-image: url('/public/img/rooms/spectrum-gradient.svg');
+    background-image: url('/assets/img/rooms/garage.svg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.bg-outdoor {
+    background-image: url('/assets/img/rooms/outdoor.svg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.bg-kitchen {
+    background-image: url('/assets/img/rooms/kitchen.svg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.bg-livingroom {
+    background-image: url('/assets/img/rooms/livingroom.svg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.bg-bedroom {
+  background-image: url('/assets/img/rooms/bedroom.svg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.bg-bathroom {
+    background-image: url('/assets/img/rooms/bathroom.svg');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
