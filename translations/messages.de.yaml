@@ -1,4 +1,10 @@
-name: "Allemand"
+name: "Deutsch"
+
+
+home:
+    welcome: "Willkommen !"
+    subtitle: "Entdecken Sie die Wahrheit über die globale Erwärmung, die Ihr Abenteuer in einem lustigen und lehrreichen Fluchtspiel beginnt."
+    start: "Anfangen"
 
 narration:
     enter_continue: "Drücken Sie Eingang, um fortzufahren"
@@ -27,10 +33,58 @@ market:
         3: "Helfen Sie Händlern, saisonale Produkte zu finden und nachhaltig zu essen"
     instructions: "Klicken Sie auf saisonale Produkte, um sie zu Ihrem Korb hinzuzufügen"
     dealers:
-        automn: "Hallo xxxx, was würden Sie Ihnen im Oktober gefallen?"
-        winter: "Guten Abend xxxx, es ist heute kalt, haben die Winterferien gut gelaufen?"
-        spring: "Ich habe keine Schokolade für Ostern, aber ich habe gute xxxx -Obst und Gemüse"
-        summer: "Xxxx, es ist heute heiß, oder?"
+        automn: "Hallo, was würden Sie in diesem Monat Oktober genießen?"
+        winter: "Guten Abend, ist es heute kalt, haben die Winterferien gut gelaufen?"
+        spring: "Ich habe keine Schokolade für Ostern, aber ich habe gutes Obst und Gemüse"
+        summer: "Es ist heute heiß, oder?"
+    toast:
+        valid: "Gültig"
+        success: "Gut gemacht, es ist ein saisonales Essen"
+        invalid: "Ungültig"
+        error: "Nein, es ist kein saisonales Essen"
+    fruit:
+        citrouille: "Kürbis"
+        poire: "Birne"
+        onion: "Zwiebel"
+        pomme: "Apfel"
+        pdt: "Kartoffel"
+        aubergine: "Aubergine"
+        artichaut: "Artischocke"
+        tomate: "Tomate"
+        carotte: "Karotte"
+        fraise: "Erdbeere"
+        poivron: "Paprika"
+        olive: "Olive"
+        pasteque: "Wassermelone"
+        citron: "Zitrone"
+        radis: "Rettich"
+
+
+industry:
+    names:
+        apples: "1 kg Äpfel"
+        shoes: "Ein paar Schuhe"
+        tennis_racket: "Ein Tennisschläger"
+        jean: "Baumwolljeans"
+        ebook_reader: "Ein hinterleuchteter Leser"
+        garden_furniture: "Ein Gartenmöbel"
+        fridge: "Ein Kühlschrank"
+        tv: "Ein 4K -Fernseher"
+    goods:
+        jean: "Wenn die Textilien synthetisch sind, ist es die Extraktion ihres Rohstoffmaterials (Öl), das bei weitem der größte Beitrag zum CO2 -Gewicht ist. Wenn es um natürliche Materialien geht (Wolle, Baumwolle ...), ist es ihre Produktion."
+        fridge: "Kaltgeräte sind die erste Quelle für den Haushaltsverbrauch (außer natürlich, wenn sie auf elektrisch erhitzt werden), die Nutzungsphase wiegt für einen Kühlschrank viel schwerer!"
+        tv: "Es ist wirklich die Produktionsphase der Rohstoffe und die Herstellung der Komponenten, die am meisten auf dem Planeten wiegen. Je komplexer die Komponenten sind, desto mehr benötigen sie seltene Metalle. Die Hersteller erschöpft diese kostbaren Mineralien in ungleichem Tempo."
+    question: "Welcher dieser beiden Vorschläge gibt die meisten CO2 aus?"
+    good_answer: "Richtige Antwort !"
+    bad_answer: "Falsche Antwort..."
+    modal:
+        title: "Erfahren Sie mehr"
+        1: "Menge des CO2, der durch den am wenigsten ausstellenden Vorschlag abgelehnt wurde:"
+        2: "Über den zweiten Vorschlag:"
+    results:
+        1: "Zusammenfassung '"
+        2: "Menge an abgelehnten CO2 (in kg)"
+    continue: "Weitermachen"
 
 transport:
     narration:
@@ -54,3 +108,9 @@ player:
     pseudo: "Pseudo"
     next: "Folgen"
     select_avatar: "Wählen Sie Ihren Avatar"
+
+toast:
+    good_answer: "Richtige Antwort !"
+    bad_answer: "Falsche Antwort..."
+    good_more: "Gut gemacht, es ist ein saisonales Essen"
+    bad_more: "Nein, es ist kein saisonales Essen"

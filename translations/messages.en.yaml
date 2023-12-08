@@ -1,4 +1,10 @@
-name: "Anglais"
+name: "English"
+
+
+home:
+    welcome: "Welcome !"
+    subtitle: "Discover the truth about global warming starting your adventure in a fun and educational escape game."
+    start: "To start"
 
 narration:
     enter_continue: "Press Entrance to continue"
@@ -27,10 +33,58 @@ market:
         3: "Help you traders to find seasonal products and eat sustainably"
     instructions: "Click on seasonal products to add them to your basket"
     dealers:
-        automn: "Hi xxxx, what would you please you in October?"
-        winter: "Good evening XXXX, it's cold today, have the winter holidays went well?"
-        spring: "I don't have chocolate for Easter but I have good xxxx fruits and vegetables"
-        summer: "XXXX, it's hot today, right?"
+        automn: "Hi, what would you enjoy in this month of October?"
+        winter: "Good evening, is it cold today, have the winter holidays went well?"
+        spring: "I don't have chocolate for Easter but I have good fruits and vegetables"
+        summer: "It's hot today right?"
+    toast:
+        valid: "Valid"
+        success: "Well done, it's a seasonal food"
+        invalid: "Invalid"
+        error: "No, it's not a seasonal food"
+    fruit:
+        citrouille: "Pumpkin"
+        poire: "Pear"
+        onion: "Onion"
+        pomme: "Apple"
+        pdt: "Potato"
+        aubergine: "Eggplant"
+        artichaut: "Artichoke"
+        tomate: "Tomato"
+        carotte: "Carrot"
+        fraise: "Strawberry"
+        poivron: "Bell pepper"
+        olive: "Olive"
+        pasteque: "Watermelon"
+        citron: "Lemon"
+        radis: "Radish"
+
+
+industry:
+    names:
+        apples: "1 kg of apples"
+        shoes: "A pair of shoes"
+        tennis_racket: "A tennis racket"
+        jean: "Cotton jeans"
+        ebook_reader: "A backlit reader"
+        garden_furniture: "A garden furniture"
+        fridge: "A fridge"
+        tv: "A 4K TV"
+    goods:
+        jean: "When the textiles are synthetic, it is the extraction of its raw material (oil) which is by far the most contributor to CO2 weight. When it comes to natural materials (wool, cotton ...) it is their production."
+        fridge: "Cold devices being the first source of domestic electricity consumption (except of course when heated to electric), the use phase weighs much heavier for a refrigerator!"
+        tv: "It is really the production phase of raw materials and manufacturing of the components that weighs the most on the planet. The more complex the components, the more they require rare metals. Manufacturers are in the process of exhausting these precious minerals at an unequaled pace."
+    question: "Which of these two proposals emits the most CO2?"
+    good_answer: "Right answer !"
+    bad_answer: "Wrong answer..."
+    modal:
+        title: "Learn more"
+        1: "Quantity of CO2 rejected by the least issuing proposal:"
+        2: "About the second proposal:"
+    results:
+        1: "Recap '"
+        2: "Quantity of CO2 rejected (in kg)"
+    continue: "Continue"
 
 transport:
     narration:
@@ -54,3 +108,9 @@ player:
     pseudo: "Pseudo"
     next: "Following"
     select_avatar: "Choose your avatar"
+
+toast:
+    good_answer: "Right answer !"
+    bad_answer: "Wrong answer..."
+    good_more: "Well done, it's a seasonal food"
+    bad_more: "No, it's not a seasonal food"

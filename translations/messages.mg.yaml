@@ -1,4 +1,10 @@
-name: "Malgache"
+name: "Malagasy"
+
+
+home:
+    welcome: "Tongasoa!"
+    subtitle: "Fantaro ny marina momba ny fiakaran'ny Warming Manomboka ny fitsangatsanganana amin'ny lalao fandosirana sy fanabeazana."
+    start: "Manomboka"
 
 narration:
     enter_continue: "Press ny fidirana hanohy"
@@ -27,10 +33,58 @@ market:
         3: "Ampio ny mpivarotra mba hahitana vokatra ara-potoana ary mihinana maharitra"
     instructions: "Kitiho ny vokatra vanin-taona manampy azy ireo amin'ny harona"
     dealers:
-        automn: "Salama XXXX, inona no tianao ho anao amin'ny Oktobra?"
-        winter: "Mirary soa xxxx, mangatsiaka izao, mandeha tsara ve ny fialantsasatry ny ririnina?"
-        spring: "Tsy manana sôkôla ho an'ny Paska aho fa manana voankazo sy legioma tsara aho"
-        summer: "XXXX, Mafana ankehitriny, sa tsy izany?"
+        automn: "Salama, inona no hankafizanao amin'ity volana oktobra ity?"
+        winter: "Mirary soa hariva, mangatsiaka izao ankehitriny, nandeha tsara ve ny fialantsasatry ny ririnina?"
+        spring: "Tsy manana sôkôla ho an'ny Paka aho fa manana voankazo sy legioma tsara aho"
+        summer: "Mafana izao anio izao?"
+    toast:
+        valid: "Manan-kery"
+        success: "Tsara izany, sakafo ara-potoana io"
+        invalid: "Tsy mety"
+        error: "Tsia, tsy sakafo ara-potoana io"
+    fruit:
+        citrouille: "Pumpkin"
+        poire: "Poara"
+        onion: "Tongolo"
+        pomme: "paoma"
+        pdt: "Ovy"
+        aubergine: "Baranjely"
+        artichaut: "Artichaut"
+        tomate: "Voatabia"
+        carotte: "Karaoty"
+        fraise: "frezy"
+        poivron: "Dipoavatra bell"
+        olive: "Olive"
+        pasteque: "Voajabo"
+        citron: "Voasary makirana"
+        radis: "Radish"
+
+
+industry:
+    names:
+        apples: "1 kg ny paoma"
+        shoes: "Kiraro kiraro"
+        tennis_racket: "Rakotra tenisy"
+        jean: "Pataloha jeans"
+        ebook_reader: "Mpamaky backlit"
+        garden_furniture: "Fitaovana zaridaina"
+        fridge: "Vata fampangatsiahana"
+        tv: "A 4K TV"
+    goods:
+        jean: "Rehefa sinthetes ny lamba dia ny fitrandrahana ny akora (menaka) izay tsy dia ny lanjan'ny CO2. Raha ny fitaovana voajanahary (volon'ondry, landihazo ...) dia ny famokarana azy ireo."
+        fridge: "Fitaovana mangatsiaka no loharano voalohany amin'ny fanjifana herinaratra an-trano (afa-tsy ny Mazava ho azy rehefa mafana ny herinaratra), ny dingana fampiasana dia mandanja be dia be ho an'ny vata fampangatsiahana!"
+        tv: "Izy io dia tena dingana famokarana akora sy famokarana ireo singa izay miondrika indrindra amin'ny planeta. Arakaraka ny maha-saro-pady ny singa, arakaraka ny fomban'izy ireo ny metaly tsy fahita firy. Ny mpanamboatra dia eo am-panaovana reraka ireo mineraly sarobidy ireo amin'ny hafainganam-pandeha tsy mitovy."
+    question: "Iza amin'ireo soso-kevitra roa ireo no mamoaka ny CO2 indrindra?"
+    good_answer: "Valiny marina!"
+    bad_answer: "Valiny diso..."
+    modal:
+        title: "Hamantatra bebe kokoa"
+        1: "Ny habetsaky ny CO2 nolavina tamin'ny volavolan-kevitra faran'izay kely indrindra:"
+        2: "Momba ny tolo-kevitra faharoa:"
+    results:
+        1: "Recap '"
+        2: "Ny habetsaky ny CO2 nolavina (ao amin'ny kg)"
+    continue: "FOANA"
 
 transport:
     narration:
@@ -49,3 +103,14 @@ house:
 end:
     narrations:
         1: "Vonona ny hiaina mahaleo tena ianao, ny lalantsika misaraka eto ..."
+
+player:
+    pseudo: "sandoka"
+    next: "FANARAHANA"
+    select_avatar: "Fidio ny avatar anao"
+
+toast:
+    good_answer: "Valiny marina!"
+    bad_answer: "Valiny diso..."
+    good_more: "Tsara izany, sakafo ara-potoana io"
+    bad_more: "Tsia, tsy sakafo ara-potoana io"

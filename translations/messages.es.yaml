@@ -1,4 +1,10 @@
-name: "Espagnol"
+name: "Español"
+
+
+home:
+    welcome: "Bienvenido !"
+    subtitle: "Descubra la verdad sobre el calentamiento global comenzando su aventura en un juego de escape divertido y educativo."
+    start: "Comenzar"
 
 narration:
     enter_continue: "Entrada de prensa para continuar"
@@ -27,10 +33,58 @@ market:
         3: "Ayudarlo a los comerciantes a encontrar productos de temporada y comer de manera sostenible"
     instructions: "Haga clic en productos de temporada para agregarlos a su cesta"
     dealers:
-        automn: "Hola xxxx, ¿qué le gustaría en octubre?"
-        winter: "Buenas noches xxxx, hace frío hoy, ¿se han ido las vacaciones de invierno?"
-        spring: "No tengo chocolate para la Pascua, pero tengo buenas frutas y verduras xxxx"
-        summer: "Xxxx, hace calor hoy, ¿verdad?"
+        automn: "Hola, ¿qué disfrutarías en este mes de octubre?"
+        winter: "Buenas noches, ¿hace frío hoy, ¿las vacaciones de invierno se han ido bien?"
+        spring: "No tengo chocolate para la Pascua, pero tengo buenas frutas y verduras."
+        summer: "Hace calor hoy, ¿verdad?"
+    toast:
+        valid: "Válido"
+        success: "Bien hecho, es una comida estacional"
+        invalid: "Inválido"
+        error: "No, no es una comida estacional"
+    fruit:
+        citrouille: "Calabaza"
+        poire: "Pera"
+        onion: "Cebolla"
+        pomme: "Manzana"
+        pdt: "Papa"
+        aubergine: "Berenjena"
+        artichaut: "Alcachofa"
+        tomate: "Tomate"
+        carotte: "Zanahoria"
+        fraise: "Fresa"
+        poivron: "Pimiento"
+        olive: "Aceituna"
+        pasteque: "Sandía"
+        citron: "Limón"
+        radis: "Rábano"
+
+
+industry:
+    names:
+        apples: "1 kg de manzanas"
+        shoes: "Un par de zapatos"
+        tennis_racket: "Una raqueta de tenis"
+        jean: "Jeans de algodón"
+        ebook_reader: "Un lector retroiluminado"
+        garden_furniture: "Un mueble de jardín"
+        fridge: "Nevera"
+        tv: "Un televisor 4K"
+    goods:
+        jean: "Cuando los textiles son sintéticos, es la extracción de su materia prima (aceite) que es, con mucho, el mayor contribuyente al peso de CO2. Cuando se trata de materiales naturales (lana, algodón ...) es su producción."
+        fridge: "Los dispositivos fríos son la primera fuente de consumo nacional de electricidad (excepto, por supuesto, cuando se calientan a electricidad), ¡la fase de uso pesa mucho más para un refrigerador!"
+        tv: "Realmente es la fase de producción de las materias primas y la fabricación de los componentes lo que más pesa en el planeta. Cuanto más complejos son los componentes, más requieren metales raros. Los fabricantes están en el proceso de agotar estos preciosos minerales a un ritmo inigualable."
+    question: "¿Cuál de estas dos propuestas emite más CO2?"
+    good_answer: "Buena respuesta !"
+    bad_answer: "Mala respuesta..."
+    modal:
+        title: "Más información"
+        1: "Cantidad de CO2 rechazada por la propuesta de menor emisión:"
+        2: "Sobre la segunda propuesta:"
+    results:
+        1: "Resumen '"
+        2: "Cantidad de CO2 rechazada (en kg)"
+    continue: "seguir"
 
 transport:
     narration:
@@ -49,3 +103,14 @@ house:
 end:
     narrations:
         1: "Estás listo para vivir de forma independiente, nuestros caminos se separan aquí ..."
+
+player:
+    pseudo: "Seudo"
+    next: "Próximo"
+    select_avatar: "Elige tu avatar"
+
+toast:
+    good_answer: "Buena respuesta !"
+    bad_answer: "Mala respuesta..."
+    good_more: "Bien hecho, es una comida estacional"
+    bad_more: "No, no es una comida estacional"

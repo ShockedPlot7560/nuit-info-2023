@@ -91,7 +91,7 @@ function Winter(props) {
       <div className="flex mt-4">
         <Button
           label={i18n.t("market.fruit.pasteque")}
-          className="mr-2"
+          className="mr-2 w-48"
           onClick={() => onButtonClick("watermelon")}
           disabled={isButtonDisabled("watermelon")}
         >
@@ -103,7 +103,7 @@ function Winter(props) {
         </Button>
         <Button
           label={i18n.t("market.fruit.citron")}
-          className="mr-2"
+          className="mr-2 w-48"
           onClick={() => onButtonClick("lemon")}
           disabled={isButtonDisabled("lemon")}
         >
@@ -115,7 +115,7 @@ function Winter(props) {
         </Button>
         <Button
           label={i18n.t("market.fruit.radis")}
-          className="mr-2"
+          className="mr-2 w-48"
           onClick={() => onButtonClick("radish")}
           disabled={isButtonDisabled("radish")}
         >
@@ -127,7 +127,7 @@ function Winter(props) {
         </Button>
         <Button
           label={i18n.t("market.fruit.olive")}
-          className="mr-2"
+          className="mr-2 w-48"
           onClick={() => onButtonClick("olive")}
           disabled={isButtonDisabled("olive")}
         >
@@ -139,7 +139,7 @@ function Winter(props) {
         </Button>
         <Button
           label={i18n.t("market.fruit.poivron")}
-          className="mr-2"
+          className="mr-2 w-48"
           onClick={() => onButtonClick("pepper")}
           disabled={isButtonDisabled("pepper")}
         >
@@ -151,7 +151,7 @@ function Winter(props) {
         </Button>
         <Button
           label={i18n.t("market.fruit.onion")}
-          className="mr-2"
+          className="mr-2 w-48"
           onClick={() => onButtonClick("onion")}
           disabled={isButtonDisabled("onion")}
         >

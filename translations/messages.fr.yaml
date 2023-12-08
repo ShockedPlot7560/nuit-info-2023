@@ -107,3 +107,9 @@ player:
     pseudo: "Pseudo"
     next: "Suivant"
     select_avatar: "Choisis ton avatar"
+
+toast:
+    good_answer: "Bonne réponse !"
+    bad_answer: "Mauvaise réponse..."
+    good_more: "Bravo, c'est bien un aliment de saison"
+    bad_more: "Non, ce n'est pas un aliment de saison"

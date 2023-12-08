@@ -94,7 +94,7 @@ function Fruits(props) {
       <div className="flex mt-4">
         <Button
           label={i18n.t("market.fruit.aubergine")}
-          className="mr-2"
+          className="mr-2 w-48"
           onClick={() => onButtonClick("eggplant")}
           disabled={isButtonDisabled("eggplant")}
         >
@@ -106,7 +106,7 @@ function Fruits(props) {
         </Button>
         <Button
           label={i18n.t("market.fruit.poire")}
-          className="mr-2"
+          className="mr-2 w-48"
           onClick={() => onButtonClick("pear")}
           disabled={isButtonDisabled("pear")}
         >
@@ -118,7 +118,7 @@ function Fruits(props) {
         </Button>
         <Button
           label={i18n.t("market.fruit.artichaut")}
-          className="mr-2"
+          className="mr-2 w-48"
           onClick={() => onButtonClick("artichoke")}
           disabled={isButtonDisabled("artichoke")}
         >
@@ -130,7 +130,7 @@ function Fruits(props) {
         </Button>
         <Button
           label={i18n.t("market.fruit.tomate")}
-          className="mr-2"
+          className="mr-2 w-48"
           onClick={() => onButtonClick("tomato")}
           disabled={isButtonDisabled("tomato")}
         >
@@ -142,7 +142,7 @@ function Fruits(props) {
         </Button>
         <Button
           label={i18n.t("market.fruit.carotte")}
-          className="mr-2"
+          className="mr-2 w-48"
           onClick={() => onButtonClick("carrot")}
           disabled={isButtonDisabled("carrot")}
         >
@@ -154,7 +154,7 @@ function Fruits(props) {
         </Button>
         <Button
           label={i18n.t("market.fruit.pdt")}
-          className="mr-2"
+          className="mr-2 w-48"
           onClick={() => onButtonClick("potato")}
           disabled={isButtonDisabled("potato")}
         >
