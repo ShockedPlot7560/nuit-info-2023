@@ -1,116 +1,116 @@
-name: "Espagnol"
+name: "Español"
 
 
 home:
-    welcome: "Bienvenue !"
-    subtitle: "Découvrez la vérité à propos du réchauffement climatique en commençant votre aventure au sein d'un escape game ludique et éducatif."
-    start: "Commencer"
+    welcome: "Bienvenido !"
+    subtitle: "Descubra la verdad sobre el calentamiento global comenzando su aventura en un juego de escape divertido y educativo."
+    start: "Comenzar"
 
 narration:
-    enter_continue: "Appuyez sur Entrée pour continuer"
+    enter_continue: "Entrada de prensa para continuar"
 
 entrypoint:
     narration:
-        1: "Bienvenue sur Terre"
-        2: "Je suis ton assistant personnel, laisse moi te guider ..."
-        3: "Résous les défis et tu seras prêt à vivre de manière autonome et responsable !"
+        1: "Bienvenido a la tierra"
+        2: "Soy tu asistente personal, déjame guiarte ..."
+        3: "¡Con frecuencia resuelto y estará listo para vivir de forma independiente y responsable!"
 
 factory:
     narration:
-        1: "Nous avons un problème d'émission de gaz à effet de serre"
-        2: "Aide nous à détecter les objets avec les plus grandes émissions de CO2"
-        3: "A la fin de la bataille, nous pourrons commencer à trouver des solutions ensemble"
-    instructions: "Clique sur l'objet qui émet le plus de carbone durant son cycle de fabrication"
+        1: "Tenemos un problema de emisión de gases de efecto invernadero"
+        2: "Ayúdanos a los objetos con las mayores emisiones de CO2"
+        3: "Al final de la batalla, podemos comenzar a encontrar soluciones juntos"
+    instructions: "Haga clic en el objeto que emite más carbono durante su ciclo de fabricación"
 
 user_creation:
     narration:
-        1: "Je pense que tu es prêt, laisse moi te fournir une identité ..."
+        1: "Creo que estás listo, déjame proporcionarte una identidad ..."
 
 market:
     narration:
-        1: "Pour te faire ton prochain repas à base de végétaux, tu as besoin de fruits et légumes"
-        2: "Nous avons de nombreux produits consommables sur terre"
-        3: "Aide toi des commercants pour trouver les produits de saison et manger durablement"
-    instructions: "Clique sur les produits de saison pour les ajouter à ton panier"
+        1: "Para hacerle su próxima comida basada en plantas, necesita frutas y verduras"
+        2: "Tenemos muchos productos consumibles en la tierra"
+        3: "Ayudarlo a los comerciantes a encontrar productos de temporada y comer de manera sostenible"
+    instructions: "Haga clic en productos de temporada para agregarlos a su cesta"
     dealers:
-        automn: "Salut, que te ferait il plaisir en ce mois d'octobre ?"
-        winter: "Bonsoir, il fait froid aujourd'hui, les vacances d'hiver se sont bien passés ?"
-        spring: "Je n'ai pas de chocolat pour pâques mais j'ai de bons fruits et légumes"
-        summer: "Il fait chaud aujourd'hui non ?"
+        automn: "Hola, ¿qué disfrutarías en este mes de octubre?"
+        winter: "Buenas noches, ¿hace frío hoy, ¿las vacaciones de invierno se han ido bien?"
+        spring: "No tengo chocolate para la Pascua, pero tengo buenas frutas y verduras."
+        summer: "Hace calor hoy, ¿verdad?"
     toast:
-        valid: "Valide"
-        success: "Bravo, c'est bien un aliment de saison"
-        invalid: "Invalide"
-        error: "Non, ce n'est pas un alimenent de saison"
+        valid: "Válido"
+        success: "Bien hecho, es una comida estacional"
+        invalid: "Inválido"
+        error: "No, no es una comida estacional"
     fruit:
-        citrouille: "Citrouille"
-        poire: "Poire"
-        onion: "Oignon"
-        pomme: "Pomme"
-        pdt: "Pomme de terre"
-        aubergine: "Aubergine"
-        artichaut: "Artichaut"
+        citrouille: "Calabaza"
+        poire: "Pera"
+        onion: "Cebolla"
+        pomme: "Manzana"
+        pdt: "Papa"
+        aubergine: "Berenjena"
+        artichaut: "Alcachofa"
         tomate: "Tomate"
-        carotte: "Carotte"
-        fraise: "Fraise"
-        poivron: "Poivron"
-        olive: "Olive"
-        pasteque: "Pastèque"
-        citron: "Citron"
-        radis: "Radis"
+        carotte: "Zanahoria"
+        fraise: "Fresa"
+        poivron: "Pimiento"
+        olive: "Aceituna"
+        pasteque: "Sandía"
+        citron: "Limón"
+        radis: "Rábano"
 
 
 industry:
     names:
-        apples: "1 kg de pommes"
-        shoes: "Une paire de chaussures"
-        tennis_racket: "Une raquette de tennis"
-        jean: "Un jean en coton"
-        ebook_reader: "Une liseuse rétroéclairée"
-        garden_furniture: "Un salon de jardin"
-        fridge: "Un frigo"
-        tv: "Une télé 4K"
+        apples: "1 kg de manzanas"
+        shoes: "Un par de zapatos"
+        tennis_racket: "Una raqueta de tenis"
+        jean: "Jeans de algodón"
+        ebook_reader: "Un lector retroiluminado"
+        garden_furniture: "Un mueble de jardín"
+        fridge: "Nevera"
+        tv: "Un televisor 4K"
     goods:
-        jean: "Lorsque les textiles sont synthétiques, c’est l’extraction de sa matière première (le pétrole) qui est de loin la plus contributrice du poids CO2. Lorsqu’il s’agit de matières naturelles (laine, coton...) c’est leur production."
-        fridge: "Les appareils de froid étant la première source de consommation électrique domestique (hormis bien sûr quand on se chauffe à l’électrique), la phase d’utilisation pèse beaucoup plus lourd pour un réfrigérateur !"
-        tv: "C’est vraiment la phase de production des matières premières et de fabrication des composants qui pèse le plus sur la planète. Plus les composants sont complexes, plus ils exigent des métaux rares. Les fabricants sont en train d'épuiser ces minerais précieux à un rythme inégalé."
-    question: "Laquelle de ces deux propositions émet le plus de CO2 ?"
-    good_answer: "Bonne réponse !"
-    bad_answer: "Mauvaise réponse..."
+        jean: "Cuando los textiles son sintéticos, es la extracción de su materia prima (aceite) que es, con mucho, el mayor contribuyente al peso de CO2. Cuando se trata de materiales naturales (lana, algodón ...) es su producción."
+        fridge: "Los dispositivos fríos son la primera fuente de consumo nacional de electricidad (excepto, por supuesto, cuando se calientan a electricidad), ¡la fase de uso pesa mucho más para un refrigerador!"
+        tv: "Realmente es la fase de producción de las materias primas y la fabricación de los componentes lo que más pesa en el planeta. Cuanto más complejos son los componentes, más requieren metales raros. Los fabricantes están en el proceso de agotar estos preciosos minerales a un ritmo inigualable."
+    question: "¿Cuál de estas dos propuestas emite más CO2?"
+    good_answer: "Buena respuesta !"
+    bad_answer: "Mala respuesta..."
     modal:
-        title: "En savoir plus"
-        1: "Quantité de CO2 rejetée par la proposition la moins émettrice :"
-        2: "A propos de la seconde proposition :"
+        title: "Más información"
+        1: "Cantidad de CO2 rechazada por la propuesta de menor emisión:"
+        2: "Sobre la segunda propuesta:"
     results:
-        1: "Récap'"
-        2: "Quantité de CO2 rejetée (en kg)"
-    continue: "Continuer"
+        1: "Resumen '"
+        2: "Cantidad de CO2 rechazada (en kg)"
+    continue: "seguir"
 
 transport:
     narration:
-        1: "Tes vacances se sont bien passées? rentrons chez nous ..."
-        2: "Je t'ai sélectionné 3 trajets, choisis le plus optimal"
-    instructions: "Sélectionne le trajet qui émettra le moins de carbone par passagers en cumulé"
+        1: "¿Tus vacaciones han ido bien? Vamos a casa ..."
+        2: "Te seleccioné 3 viajes, elige los más óptimos"
+    instructions: "Seleccione el viaje que emitirá el menor carbono por los pasajeros acumulativos"
 
 
 house:
     narration:
-        1: "De retour chez toi, tu reçois ta première facture d'électricité."
-        2: "Non, non, ce n'est pas une erreur, il va falloir réduire ta consommation..."
-        3: "Parcours ta maison à la recherche des appareils énergivores"
-    instructions: "Navigue au travers des pièces et clique sur les objets énergivores à éviter."
+        1: "De vuelta a casa, recibirá su primera factura de electricidad."
+        2: "No, no, no es un error, tendrá que reducir su consumo ..."
+        3: "Su hogar su casa en busca de dispositivos de consumo de energía"
+    instructions: "Navegue a través de piezas y haga clic en objetos de consumo de energía para evitar."
 
 end:
     narrations:
-        1: "Tu es prêt à vivre en autonomie, nos chemins se séparent ici ..."
+        1: "Estás listo para vivir de forma independiente, nuestros caminos se separan aquí ..."
 
 player:
-    pseudo: "Pseudo"
-    next: "Suivant"
-    select_avatar: "Choisis ton avatar"
+    pseudo: "Seudo"
+    next: "Próximo"
+    select_avatar: "Elige tu avatar"
 
 toast:
-    good_answer: "Bonne réponse !"
-    bad_answer: "Mauvaise réponse..."
-    good_more: "Bravo, c'est bien un aliment de saison"
-    bad_more: "Non, ce n'est pas un aliment de saison"
+    good_answer: "Buena respuesta !"
+    bad_answer: "Mala respuesta..."
+    good_more: "Bien hecho, es una comida estacional"
+    bad_more: "No, no es una comida estacional"
