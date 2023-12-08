@@ -87,7 +87,7 @@ function Autunm(props) {
       <div className="flex mt-4">
         <Button
           label={i18n.t("market.fruit.citrouille")}
-          className="mr-2"
+          className="mr-2 w-48"
           onClick={() => onButtonClick("pumpkin")}
           disabled={isButtonDisabled("pumpkin")}
         >
@@ -99,7 +99,7 @@ function Autunm(props) {
         </Button>
         <Button
           label={i18n.t("market.fruit.poire")}
-          className="mr-2"
+          className="mr-2 w-48"
           onClick={() => onButtonClick("pear")}
           disabled={isButtonDisabled("pear")}
         >
@@ -111,7 +111,7 @@ function Autunm(props) {
         </Button>
         <Button
           label={i18n.t("market.fruit.onion")}
-          className="mr-2"
+          className="mr-2 w-48"
           onClick={() => onButtonClick("onion")}
           disabled={isButtonDisabled("onion")}
         >
@@ -123,7 +123,7 @@ function Autunm(props) {
         </Button>
         <Button
           label={i18n.t("market.fruit.pomme")}
-          className="mr-2"
+          className="mr-2 w-48"
           onClick={() => onButtonClick("apple")}
           disabled={isButtonDisabled("apple")}
         >
@@ -135,7 +135,7 @@ function Autunm(props) {
         </Button>
         <Button
           label={i18n.t("market.fruit.pdt")}
-          className="mr-2"
+          className="mr-2 w-48"
           onClick={() => onButtonClick("potato")}
           disabled={isButtonDisabled("potato")}
         >

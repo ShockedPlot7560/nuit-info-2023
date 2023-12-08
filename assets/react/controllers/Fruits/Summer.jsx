@@ -93,7 +93,7 @@ function Summer(props) {
       <div className="flex mt-4">
         <Button
           label={i18n.t("market.fruit.citrouille")}
-          className="mr-2"
+          className="mr-2 w-48"
           onClick={() => onButtonClick("pumpkin")}
           disabled={isButtonDisabled("pumpkin")}
         >
@@ -105,7 +105,7 @@ function Summer(props) {
         </Button>
         <Button
           label={i18n.t("market.fruit.fraise")}
-          className="mr-2"
+          className="mr-2 w-48"
           onClick={() => onButtonClick("strawberry")}
           disabled={isButtonDisabled("strawberry")}
         >
@@ -117,7 +117,7 @@ function Summer(props) {
         </Button>
         <Button
           label={i18n.t("market.fruit.tomate")}
-          className="mr-2"
+          className="mr-2 w-48"
           onClick={() => onButtonClick("tomato")}
           disabled={isButtonDisabled("tomato")}
         >
@@ -129,7 +129,7 @@ function Summer(props) {
         </Button>
         <Button
           label={i18n.t("market.fruit.poivron")}
-          className="mr-2"
+          className="mr-2 w-48"
           onClick={() => onButtonClick("pepper")}
           disabled={isButtonDisabled("pepper")}
         >
@@ -141,7 +141,7 @@ function Summer(props) {
         </Button>
         <Button
           label={i18n.t("market.fruit.olive")}
-          className="mr-2"
+          className="mr-2 w-48"
           onClick={() => onButtonClick("olive")}
           disabled={isButtonDisabled("olive")}
         >
