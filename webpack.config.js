@@ -85,9 +85,6 @@ Encore
 
     // postcss loader for tailwindcss
     .enablePostCssLoader()
-
-    // images from /assets/img will be copied to /public/build/img
-    .copyFiles({from: './assets/img'})
 ;
 
 module.exports = Encore.getWebpackConfig();

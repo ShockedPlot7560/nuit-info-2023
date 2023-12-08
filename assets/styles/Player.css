@@ -1,0 +1,21 @@
+.avatars-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-top: 16px;
+  }
+  
+  .avatar-card {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .avatar-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .avatar-card.selected {
+    border: 2px solid #007ad9;
+  }
+
+  
