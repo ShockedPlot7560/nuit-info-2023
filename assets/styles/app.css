@@ -105,9 +105,16 @@ body {
   100%{background-position:0% 82%}
 }
 @keyframes rainbow {
-  0%{background-position:0% 82%}
-  50%{background-position:100% 19%}
-  100%{background-position:0% 82%}
+  0% {
+    background-position: 0% 82%
+  }
+  50% {
+    background-position: 100% 19%
+  }
+  100% {
+    background-position: 0% 82%
+  }
+}
 
 
 body > div:nth-child(2) > div > div > div > div.p-card-content {
