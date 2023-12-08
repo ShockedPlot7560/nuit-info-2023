@@ -3,7 +3,7 @@ import { Button } from "primereact/button";
 import { Toast } from "primereact/toast";
 import Summer from "./Summer"
 import "../../../styles/Fruits.css";
-import i18n from "../../../utils/i18n";
+import i18n from '../../../utils/i18n';
 
 function Fruits(props) {
   const toastRef = useRef();
@@ -22,12 +22,18 @@ function Fruits(props) {
   const [nbRightAns, setnbRightAns] = useState(0);
   const [isRoundFinished, setIsRoundFinished] = useState(false);
 
+  window.addEventListener(('keydown'), (e) => {
+    if (e.key === 'Enter' && document.getElementById("dialog")) {
+        document.getElementById("dialog").remove();
+    }
+  });
+
   const onButtonClick = (fruitOrVegetable) => {
     if (rSpring.includes(fruitOrVegetable)) {
       toastRef.current.show({
         severity: "success",
-        summary: i18n.t("toast.good_answer"),
-        detail: i18n.t("toast.good_more"),
+          summary: i18n.t("market.toast.valid"),
+          detail: i18n.t("market.toast.success"),
       });
       const right = nbRightAns;
       setnbRightAns(right + 1)
@@ -37,8 +43,8 @@ function Fruits(props) {
     } else {
       toastRef.current.show({
         severity: "error",
-        summary: i18n.t("toast.bad_answer"),
-        detail: i18n.t("toast.bad_more"),
+          summary: i18n.t("market.toast.invalid"),
+          detail: i18n.t("market.toast.error"),
       });
     }
     setDisabledButtons((prevButtons) => [...prevButtons, fruitOrVegetable]);
@@ -59,6 +65,23 @@ function Fruits(props) {
 
   return (
     <div className="flex flex-col justify-center items-center h-screen w-screen">
+        <div style={{
+            position: "absolute",
+            top: "0",
+            left: "0",
+            right: "0",
+            bottom: "0",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            backgroundColor: "rgba(0,0,0,0.5)",
+            zIndex: "50"
+        }} id={"dialog"}>
+            <div className={"p-3"} style={{width: "50%", backgroundColor: "whitesmoke", textAlign: "center", border: "1px solid gray", borderRadius: "0.5rem"}}>
+                <p>{i18n.t('market.dealers.spring')}</p>
+                <p><small className={"animate-pulse"}>{i18n.t('narration.enter_continue')}</small></p>
+            </div>
+        </div>
       <div className="h-fit w-fit">
         <Toast ref={toastRef} />
         <img
@@ -70,8 +93,8 @@ function Fruits(props) {
 
       <div className="flex mt-4">
         <Button
-          label="Aubergine"
-          className="mr-2 w-48"
+          label={i18n.t("market.fruit.aubergine")}
+          className="mr-2"
           onClick={() => onButtonClick("eggplant")}
           disabled={isButtonDisabled("eggplant")}
         >
@@ -82,8 +105,8 @@ function Fruits(props) {
           ></img>
         </Button>
         <Button
-          label="Poire"
-          className="mr-2 w-48"
+          label={i18n.t("market.fruit.poire")}
+          className="mr-2"
           onClick={() => onButtonClick("pear")}
           disabled={isButtonDisabled("pear")}
         >
@@ -94,8 +117,8 @@ function Fruits(props) {
           ></img>
         </Button>
         <Button
-          label="Artichaut"
-          className="mr-2 w-48"
+          label={i18n.t("market.fruit.artichaut")}
+          className="mr-2"
           onClick={() => onButtonClick("artichoke")}
           disabled={isButtonDisabled("artichoke")}
         >
@@ -106,8 +129,8 @@ function Fruits(props) {
           ></img>
         </Button>
         <Button
-          label="Tomate"
-          className="mr-2 w-48"
+          label={i18n.t("market.fruit.tomate")}
+          className="mr-2"
           onClick={() => onButtonClick("tomato")}
           disabled={isButtonDisabled("tomato")}
         >
@@ -118,8 +141,8 @@ function Fruits(props) {
           ></img>
         </Button>
         <Button
-          label="Carotte"
-          className="mr-2 w-48"
+          label={i18n.t("market.fruit.carotte")}
+          className="mr-2"
           onClick={() => onButtonClick("carrot")}
           disabled={isButtonDisabled("carrot")}
         >
@@ -130,8 +153,8 @@ function Fruits(props) {
           ></img>
         </Button>
         <Button
-          label="Pomme de terre"
-          className="mr-2 w-48"
+          label={i18n.t("market.fruit.pdt")}
+          className="mr-2"
           onClick={() => onButtonClick("potato")}
           disabled={isButtonDisabled("potato")}
         >
