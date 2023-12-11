@@ -25,6 +25,9 @@ async function waitEnter() {
             enter = true;
         }
     });
+    document.addEventListener("click", (e) => {
+        enter = true;
+    });
     await new Promise(async (resolve) => {
         while (!enter) {
             await new Promise((resolve) => setTimeout(resolve, 100));

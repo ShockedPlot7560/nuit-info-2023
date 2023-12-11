@@ -10,7 +10,7 @@ import {Chart} from "primereact/chart";
 const data = {
     apples: {
         value: 0.396, text: ""
-    }, shoes: {
+    }, sneakers: {
         value: 15, text: ""
     }, tennis_racket: {
         value: 23, text: ""
@@ -105,13 +105,19 @@ export default function (props) {
     }
 
     return (<>
-        {!isGameEnded ? <div className="home-container bg-home gap-5">
+        {!isGameEnded ? <div className="home-container bg-home" style={{gap: "5rem"}}>
                     <span id="industry-question"
-                          className="text-4xl font-bold text-white">{i18n.t("industry.question")}</span>
+                          className="text-5xl font-bold text-white">{i18n.t("industry.question")}</span>
             <div className="flex flex-row gap-5">
                 {Object.keys(board).length > 0 && board[step][subStep].map((boardSubStep, index) => {
-                    return (<Button key={index} label={i18n.t(`industry.names.${boardSubStep}`)} text raised
-                                    onClick={() => updateBoard(boardSubStep)}/>)
+                    return (
+                        <Card key={index} onClick={() => updateBoard(boardSubStep)}>
+                            <div className="flex flex-col" style={{margin: "0 4rem 3rem 4rem"}}>
+                                <span className="svg-font">{i18n.t(`industry.names.${boardSubStep}`)}</span>
+                                <img height="40vh" src={`/img/industry/${boardSubStep}.svg`} alt={boardSubStep} style={{minHeight: "40vh"}}/>
+                            </div>
+                        </Card>
+                    )
                 })}
             </div>
         </div> : !displayCorrection && <div className="home-container bg-home gap-5">
@@ -136,8 +142,10 @@ export default function (props) {
                     },
                 }}/>
 
-                <Button style={{alignSelf: 'center'}} label={i18n.t("industry.continue")}
-                        onClick={() => window.location.replace("/player")}/>
+                <div className="flex justify-center">
+                    <Button label={i18n.t("industry.continue")}
+                            onClick={() => window.location.replace("/player")}/>
+                </div>
             </Card>
         </div>}
 

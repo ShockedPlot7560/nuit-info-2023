@@ -11,36 +11,36 @@ narration:
 entrypoint:
     narration:
         1: "Bienvenue sur Terre"
-        2: "Je suis ton assistant personnel, laisse moi te guider ..."
+        2: "Je suis ton assistant personnel, laisse-moi te guider..."
         3: "Résous les défis et tu seras prêt à vivre de manière autonome et responsable !"
 
 factory:
     narration:
-        1: "Nous avons un problème d'émission de gaz à effet de serre"
-        2: "Aide nous à détecter les objets avec les plus grandes émissions de CO2"
-        3: "A la fin de la bataille, nous pourrons commencer à trouver des solutions ensemble"
-    instructions: "Clique sur l'objet qui émet le plus de carbone durant son cycle de fabrication"
+        1: "Nous avons un problème d'émission de gaz à effet de serre."
+        2: "Aide-nous à détecter les objets avec les plus grandes émissions de CO2."
+        3: "À la fin de la bataille, nous pourrons commencer à trouver des solutions ensemble."
+    instructions: "Clique sur l'objet qui émet le plus de carbone durant son cycle de fabrication."
 
 user_creation:
     narration:
-        1: "Je pense que tu es prêt, laisse moi te fournir une identité ..."
+        1: "Je pense que tu es prêt ! Au fait, comment t'appelles-tu ?"
 
 market:
     narration:
-        1: "Pour te faire ton prochain repas à base de végétaux, tu as besoin de fruits et légumes"
-        2: "Nous avons de nombreux produits consommables sur terre"
-        3: "Aide toi des commercants pour trouver les produits de saison et manger durablement"
-    instructions: "Clique sur les produits de saison pour les ajouter à ton panier"
+        1: "Pour te faire ton prochain repas responsable, tu as besoin de fruits et légumes."
+        2: "Nous avons de nombreux produits consommables sur Terre."
+        3: "Aide-toi des commerçants pour trouver les produits de saison et manger durablement."
+    instructions: "Clique sur les produits de saison pour les ajouter à ton panier."
     dealers:
-        automn: "Salut, que te ferait il plaisir en ce mois d'octobre ?"
-        winter: "Bonsoir, il fait froid aujourd'hui, les vacances d'hiver se sont bien passés ?"
-        spring: "Je n'ai pas de chocolat pour pâques mais j'ai de bons fruits et légumes"
-        summer: "Il fait chaud aujourd'hui non ?"
+        automn: "Salut, qu'est-ce qui te ferait plaisir en ce mois d'octobre ?"
+        winter: "Bonsoir, il fait froid aujourd'hui... Les vacances d'hiver se sont bien passés ?"
+        spring: "Je n'ai pas de chocolat pour Pâques mais j'ai de bons fruits et légumes"
+        summer: "Quelle chaleur..."
     toast:
-        valid: "Valide"
-        success: "Bravo, c'est bien un aliment de saison"
-        invalid: "Invalide"
-        error: "Non, ce n'est pas un alimenent de saison"
+        valid: "Bonne réponse !"
+        success: "Bravo, c'est bien un aliment de saison."
+        invalid: "Mauvaise réponse..."
+        error: "Non, ce n'est pas un aliment de saison."
     fruit:
         citrouille: "Citrouille"
         poire: "Poire"
@@ -62,7 +62,7 @@ market:
 industry:
     names:
         apples: "1 kg de pommes"
-        shoes: "Une paire de chaussures"
+        sneakers: "Sneakers"
         tennis_racket: "Une raquette de tennis"
         jean: "Un jean en coton"
         ebook_reader: "Une liseuse rétroéclairée"
@@ -96,7 +96,7 @@ house:
     narration:
         1: "De retour chez toi, tu reçois ta première facture d'électricité."
         2: "Non, non, ce n'est pas une erreur, il va falloir réduire ta consommation..."
-        3: "Parcours ta maison à la recherche des appareils énergivores"
+        3: "Parcours ta maison à la recherche des appareils énergivores."
     instructions: "Navigue au travers des pièces et clique sur les objets énergivores à éviter."
 
 end:
