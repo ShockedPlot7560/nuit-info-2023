@@ -47,7 +47,8 @@ function Player(props) {
             width: "100%",
             height: "100%",
             position: "absolute",
-            backgroundColor: "rgba(0,0,0,1)"
+            backgroundColor: "rgba(0,0,0,1)",
+            gap: "2rem"
         }}>
             <span className="p-float-label">
                 <InputText
@@ -56,16 +57,16 @@ function Player(props) {
                     onChange={onPseudoChange}
                 />
                 <label htmlFor="pseudo">{i18n.t("player.pseudo")}</label>
-                <Button
-                    className="button"
-                    type="button"
-                    label={i18n.t("player.next")}
-                    onClick={() => {
-                        document.getElementById("playerName-container").style.display = "none";
-                        document.getElementById("playerAvatar-container").style.display = "flex";
-                    }}
-                />
             </span>
+            <Button
+                className="button"
+                type="button"
+                label={i18n.t("player.next")}
+                onClick={() => {
+                    document.getElementById("playerName-container").style.display = "none";
+                    document.getElementById("playerAvatar-container").style.display = "flex";
+                }}
+            />
         </div>
         <div id={"playerAvatar-container"} style={{
             display: "none",
