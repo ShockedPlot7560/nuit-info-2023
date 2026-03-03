@@ -85,4 +85,4 @@ Pour les mêmes raisons, l'application n'est pas utilisable sur mobile.
 - Théo Challon ([@ShockedPlot7560](https://github.com/ShockedPlot7560))
 - Liam Le Ny ([@liam-leny](https://github.com/liam-leny))
 - Ervan Malivet ([@RaavenBZH](https://github.com/RaavenBZH))
-- Augustin Pasquier ([@augustin-pasq](https://github.com/augustin-pasq))
+- Augustin Pasquier ([@augustinpasq](https://github.com/augustinpasq))
